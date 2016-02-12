@@ -98,10 +98,20 @@ body{
   padding: 0 40px;
 }
 
+.Frame {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #c8c8c8;
+  background-color: white;
+}
+
+.Frame img{
+  margin: 46px 90px;
+}
+
 .Content{
   width: 680px;
   float: right;
-  font-family: "OpenSans";
 }
 
 .Content p{
@@ -134,14 +144,4 @@ body{
   line-height: 40px;
   text-decoration: none;
   padding: 0 40px;
-}
-.Frame {
-  border-style: solid;
-  border-width: 1px;
-  border-color: #c8c8c8;
-  background-color: white;
-}
-
-.Frame img{
-  margin: 46px 90px;
 }
