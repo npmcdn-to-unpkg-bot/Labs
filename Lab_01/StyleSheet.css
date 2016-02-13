@@ -1,0 +1,40 @@
+﻿* {
+	margin:0;
+}
+body {
+	background-color:gray;
+	align-content:center;
+}
+
+.sheet{
+	line-height:1.5;
+	width:60%;
+	height:100%;
+	margin: 10px auto;
+	background-color:white;
+}
+.Fio{
+    text-align:center;
+}
+
+.textPart div {
+	border-top: 2px;
+	border-top-style: solid;
+	border-color:gray;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.Fio img{
+    width:20%;
+    height:auto;
+}
+
+.textPart{
+    padding: 0% 10% 10% 10%;
+    font-size: x-large;
+}
+
+.textPart p{
+    padding-left: 5%;
+}
