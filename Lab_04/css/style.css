@@ -1,0 +1,163 @@
+*{
+  margin: 0;
+  padding: 0;
+  border-width: 0px;
+}
+
+body {
+  background-image: url("../img/background.jpg");
+  /*background-color: green;*/
+}
+
+.clearfix:after{
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.wrapper {
+  background-color: white;
+  width: 1000px;
+  margin: auto;
+}
+
+.header{
+  height: 164px;
+  padding: 12px 28px 0 28px;
+  position: relative;
+  border-width: 0px;
+}
+
+.logo{
+  float: left;
+}
+
+.conFlag{
+  float: right;
+  width: 472px;
+  height: 160px;
+  position: relative;
+  /*background-color: green;*/
+}
+
+.contacts{
+  float: right;
+  font-size: 12px;
+  font-family: "Tahoma";
+  color: #128aa7;
+  width: 472px;
+  /*background-color: black;*/
+}
+
+.contacts p{
+  padding: 0 0 0 330px;
+}
+
+.flags li{
+  float: right;
+  font-size: 10px;
+  font-family: "Tahoma";
+  text-align: center;
+  padding: 0 6px;
+
+}
+
+.flags{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.menu{
+  background-color: #333333;
+  height: 28px;
+}
+
+.menu a{
+  display: block;
+  /*padding: 0 65px 0 0;*/
+  line-height: 28px;
+  font-family: "Tahoma";
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.menu .menu_main{
+  padding: 0 65px 0 0;
+}
+
+.menu__list{
+  position: relative;
+}
+.menu:first-child{
+  padding: 0 65px 0 65px;
+}
+
+.menu:last-child{
+  padding: 0 0 0 65px;
+}
+
+.menu__list:hover .subMenu{
+  opacity: 1;
+  top: 28px;
+
+}
+
+.subMenu {
+  position: absolute;
+  background-color: #333333;
+  padding: 0 10px;
+  line-height: 28px;
+  opacity: 0;
+  top:-999em;
+  transition: 0.5s opacity;
+}
+
+.menu li{
+  list-style: none;
+  float: left;
+}
+
+.menu__list::after{
+  position: absolute;
+  content: "";
+  border: 5px solid;
+  border-color: white transparent transparent transparent;
+  top: 0.7em;
+  right: 3em;
+}
+
+.container{
+  height: 545px;
+}
+
+.content{
+  width: 580px;
+  background-color: #fff;
+  margin: auto;
+  height: 545px;
+}
+
+.leftSideBar{
+  float: left;
+  height: 545px;
+  width: 210px;
+  background-color: #edeef0;
+  border: 1px solid;
+  border-color: #c7cacf;
+}
+
+.rightSideBar{
+  float: right;
+  height: 545px;
+  width: 210px;
+  background-color: #edeef0;
+  border: 1px solid;
+  border-color: #c7cacf;
+}
+
+.footer{
+  height: 35px;
+  width: 1000px;
+  background-color: green;
+}
