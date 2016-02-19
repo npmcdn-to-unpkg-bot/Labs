@@ -134,15 +134,14 @@ body {
   bottom: 0px;
 }
 
-.forms .box{
+.forms .box {
   margin: 14px 0;
 }
 
-.forms img{
-  position: relative;
-  display: block;
+.fb {
   padding: 36px 0 0;
   margin: 0px auto 7px;
+  text-align: center;
 }
 
 .ou {
