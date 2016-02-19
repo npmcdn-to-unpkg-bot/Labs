@@ -42,7 +42,7 @@ body {
 }
 
 .contacts{
-  float: right;
+  /*float: right;*/
   font-size: 12px;
   color: #128aa7;
   width: 472px;
@@ -68,6 +68,7 @@ body {
 }
 
 .photo{
+  /*???????????????*/
   height: 237px;
 }
 
@@ -194,7 +195,7 @@ body {
 }
 
 .footer{
-  width: 1000px;
+  /*width: 1000px;*/
   background-color: transparent;
   color: #fff;
   font-size: 12px;
