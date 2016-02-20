@@ -1,0 +1,69 @@
+table {
+  border-collapse: collapse;
+  border-style: hidden;
+}
+table td {
+  margin: 5px;
+    border: 10px solid black;
+}
+
+.red {
+  background-color: #ff5540;
+}
+
+.black {
+  background-color: #3d3d3d;
+}
+
+.yellow {
+  background-color: #fff461;
+}
+
+.blue {
+  background-color: #0e3b7e;
+}
+
+.fl {
+  width: 113px;
+  height: 50px;
+}
+
+.fm {
+  width: 185px;
+}
+
+.fr {
+  width: 155px;
+}
+.sf {
+  height: 137px;
+  width: 45px;
+}
+
+.tf {
+  height: 199px;
+  /*width: 47px;*/
+}
+
+.ff {
+  height: 135px;
+  /*width: 47px;*/
+}
+
+.fs, .f2 {
+  height: 65px;
+  width: 65px;
+}
+
+.ft, .f3 {
+  width: 65px;
+}
+
+.ss {
+  height: 31px;
+}
+
+.s4 {
+  height: 35px;
+  width: 129px;
+}
