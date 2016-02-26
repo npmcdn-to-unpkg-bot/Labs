@@ -250,7 +250,7 @@ header {
   margin-bottom: 4px;
 }
 
-.search_title .search_left {
+.car .search_title .search_left {
   float: left;
   font-size: 10px;
   margin: 2px 0 0 16px;
@@ -274,6 +274,12 @@ header {
   float: left;
 }
 
+.search_form_right {
+  width: 50%;
+  float: left;
+  margin:-2px 0 0 -1px;
+}
+
 .fw {
   float: left;
   font-family: Arial;
@@ -282,24 +288,27 @@ header {
   text-align: left;
   margin: 0px 0 0px 15px;
   line-height: 8px;
-  /*display: table-cell;*/
-  /*vertical-align: bottom;*/
-  /*position: relative;
-  bottom: -1px;*/
 }
 
 .sw {
   /*float: left;*/
   font-family: Arial;
   font-size: 8px;
+  color: #77858b;
 }
 
 .ddl {
-  /*display: block;*/
   float: right;
   margin: 0 15px 4px 0px;
   width: 100px;
   height: 18px;
+}
+
+.arrow {
+  -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+  background: url(../img/arrow.png) no-repeat right white;
 }
 
 .sfl_row {
@@ -323,6 +332,80 @@ header {
     margin: 2px 25px 0 0px;
 }
 
+.tyre .search_title .search_left {
+  margin: 1px 0 0 8px;
+  color: #114165;
+  font-family: 'Arial Black';
+  font-size: 10px;
+  margin-bottom: 4px;
+}
+
+.tyre .sfl_block select{
+  /*float: right;*/
+  margin: 0 -5px 0px 1px;
+  width: 50px;
+  height: 18px;
+}
+
+
+
+.fw2 {
+  float: left;
+  font-family: Arial;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: left;
+  margin: 1px 0 0px 11px;
+  line-height: 8px;
+}
+
+.sLabel {
+  display: block;
+  float: left;
+}
+
+.season {
+  float: right;
+  margin: 0px 81px 0 0;
+}
+
+.season input[type="checkbox"] {
+  height: 11px;
+  appearance: none;
+  width: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(17, 65, 101);
+  box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
+}
+.season p {
+  font-size: 12px;
+  font-family: "Lucida Sans Unicode";
+}
+
+.tyre input[type="submit"]{
+    float: right;
+    background: none;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #154467;
+    font-size: 11px;
+    font-family: "Arial";
+    font-style: italic;
+    margin: 2px 20px 0 0px;
+}
+
+.disk .search_title .search_left {
+  margin: 1px 0 0 8px;
+  color: #114165;
+  font-family: 'Arial Black';
+  font-size: 10px;
+  margin-bottom: 4px;
+  margin-left: 4px;
+  letter-spacing: 1.2px;
+}
+
 .formBoard {
   height: 100%;
   border-style: solid;
@@ -332,6 +415,59 @@ header {
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 5px 5px 0px rgba(104, 104, 104, 0.75);
 }
+
+.leftPane {
+  float: left;
+  width: 175px;
+  border-right: #bdc6ca 1px solid;
+}
+
+.disk .leftPane .sfl_block select {
+  height:17px;
+  width:57px;
+}
+
+.disk input[type="submit"]{
+    float: right;
+    background: none;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #154467;
+    font-size: 11px;
+    font-family: "Arial";
+    font-style: italic;
+    margin: 6px 21px 0 0px;
+}
+
+.ddl3 {
+  /*float: right;*/
+  margin: 0  0  0  0;
+}
+
+.rightPane {
+  float: left;
+  width: 89px;
+}
+
+.fw3 {
+  float: left;
+  font-family: Arial;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 8px;
+  letter-spacing: 0.9px;
+}
+
+.sw3 {
+  /*float: left;*/
+  font-family: Arial;
+  font-size: 9px;
+  color: #77858b;
+  letter-spacing: 0.9px;
+}
+
 
 .mainPart {
   width: 100%;
@@ -415,15 +551,9 @@ main figure figcaption span {
 
 .left .side-title{
   font: 12.73px "Lucida Sans Unicode";
-  padding: 3px 7px 2px 5px;
+  padding: 3px 7px 2px 27px;
   margin-bottom: 13px;
-}
-
-.left img {
-  position: relative;
-  left: -3px;
-  top: -1px;
-  float: left;
+  background: url('../img/file.png') 2px 50% no-repeat;
 }
 
 
@@ -447,16 +577,10 @@ main figure figcaption span {
   border-radius: 15px;
   font: 14px "Lucida Sans Unicode";
   color: #114165;
-  padding: 4px 50px 0px 8px;
+  padding: 3px 28px 2px 30px;
+  background: url('../img/Circle.png') 2px 50% no-repeat;
 }
 
-.left .menuTitle img {
-  position: relative;
-  /*display: inline;*/
-  left: -4px;
-  top: -2px;
-  float: left;
-}
 
 .left ul {
   list-style: circle;
@@ -467,7 +591,7 @@ main figure figcaption span {
 .names li {
   /*height: 20px;*/
   height: 20px;
-  margin: 3px 0 6px 54px;
+  margin: 2px 0 6px 54px;
   padding-left: 3px;
   font: 12.77px "Lucida Sans Unicode";
 }
@@ -498,21 +622,16 @@ main figure figcaption span {
   border-radius: 15px;
   font: 14px Arial;
   color: #114165;
-  padding: 5px 50px 5px 8px;
+  padding: 5px 28px 5px 30px;
   margin: 0  0 3px 15px;
+  background: url('../img/Circle.png') 2px 50% no-repeat;
 }
 
-.right .menuTitle img {
-  position: relative;
-  /*display: inline;*/
-  left: -4px;
-  top: -4px;
-  float: left;
-}
 .right .side-title{
   font: 14px "Lucida Sans Unicode";
-  padding: 2px 90px 2px 8px;
+  padding: 2px 90px 2px 30px;
   margin-bottom: 14px;
+  background: url('../img/file.png') 2px 50% no-repeat;
 }
 
 .right {
@@ -521,11 +640,7 @@ main figure figcaption span {
   margin: 1px 0px 0px 9px;
 }
 
-.right .side-title img {
-  position: relative;
-  left: -5px;
-  float: left;
-}
+
 
 .brand p {
   position: relative;
