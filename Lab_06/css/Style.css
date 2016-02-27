@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-.clearfix:after{
+.clearfix:after {
   content: "";
   clear: both;
   display: block;
@@ -170,8 +170,8 @@ header {
   color: #b1bcc0;
   text-transform: uppercase;
   padding: 0 20px 0 20px;
-  margin: 4px 0 0 0;
-  letter-spacing: -1.3px;
+  margin-top: 3px;
+  letter-spacing: -0.2px;
   text-align: center;
 }
 
@@ -179,10 +179,6 @@ header {
   border-radius: 14px;
   color: white;
   background-image: linear-gradient( 180deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
-}
-
-.menu nav a:first-child {
-  margin-left: 125px;
 }
 
 .order{
@@ -195,11 +191,10 @@ header {
 
 .order span{
 	position:relative;
-	top:-2px;
 	left:0;
 	color:#899296;
 	font:11px/8px Arial, Helvetica, sans-serif;
-  margin-right: 5px;
+  /*margin-right: 5px;*/
 	}
 
 .order img{
@@ -211,12 +206,14 @@ header {
 .order  .white{
   color: #929b9f;
   font-weight: bold;
+  top:-2px;
 }
 
 .order .blue {
   color: #0d5a8f;
   font-size: 12px;
   font-weight: bold;
+  top:-1px;
 }
 
 .car {
@@ -291,7 +288,6 @@ header {
 }
 
 .sw {
-  /*float: left;*/
   font-family: Arial;
   font-size: 8px;
   color: #77858b;
@@ -306,20 +302,18 @@ header {
 
 .arrow {
   -webkit-appearance: none;
-   -moz-appearance: none;
-   appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background: url(../img/arrow.png) no-repeat right white;
 }
 
 .sfl_row {
-  /*position: relative;
-  content: "";*/
   clear: both;
   line-height: 20px;
   text-align: right;
 }
 
-.car input[type="submit"]{
+.car input[type="submit"] {
     float: right;
     background: none;
     border: none;
@@ -329,7 +323,7 @@ header {
     font-size: 11px;
     font-family: "Arial";
     font-style: italic;
-    margin: 2px 25px 0 0px;
+    margin: 8px 25px 0 0px;
 }
 
 .tyre .search_title .search_left {
@@ -340,8 +334,7 @@ header {
   margin-bottom: 4px;
 }
 
-.tyre .sfl_block select{
-  /*float: right;*/
+.tyre .sfl_block select {
   margin: 0 -5px 0px 1px;
   width: 50px;
   height: 18px;
@@ -370,20 +363,22 @@ header {
 }
 
 .season input[type="checkbox"] {
-  height: 11px;
+  height: 10px;
   appearance: none;
   width: 10px;
   border-style: solid;
   border-width: 1px;
   border-color: rgb(17, 65, 101);
   box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
+  -webkit-appearance: none;
+  margin: 1px 2px 0 0;
 }
 .season p {
   font-size: 12px;
   font-family: "Lucida Sans Unicode";
 }
 
-.tyre input[type="submit"]{
+.tyre input[type="submit"] {
     float: right;
     background: none;
     border: none;
@@ -420,6 +415,8 @@ header {
   float: left;
   width: 175px;
   border-right: #bdc6ca 1px solid;
+  height: 106px;
+  margin-top: -22px;
 }
 
 .disk .leftPane .sfl_block select {
@@ -441,7 +438,6 @@ header {
 }
 
 .ddl3 {
-  /*float: right;*/
   margin: 0  0  0  0;
 }
 
@@ -461,7 +457,6 @@ header {
 }
 
 .sw3 {
-  /*float: left;*/
   font-family: Arial;
   font-size: 9px;
   color: #77858b;
@@ -519,7 +514,6 @@ main figure img {
   font-size: 12.77px;
   font-family: "Lucida Sans Unicode";
   color: #1f2528;
-  /*line-height: 0.875;*/
   text-align: center;
 }
 
@@ -559,7 +553,6 @@ main figure figcaption span {
 
 .side-title {
   line-height: 25px;
-  /*width: 154px;*/
   color: #114165;
   border-style: solid;
   border-width: 1px;
@@ -573,12 +566,11 @@ main figure figcaption span {
   border-style: solid;
   border-width: 1px;
   border-color: rgb(121, 135, 141);
-  /*box-shadow: 0px 3px 3px 0px rgba(150, 150, 150, 0.75);*/
   border-radius: 15px;
   font: 14px "Lucida Sans Unicode";
   color: #114165;
   padding: 3px 28px 2px 30px;
-  background: url('../img/Circle.png') 2px 50% no-repeat;
+  background: url('../img/Circle.png') 5px 50% no-repeat;
 }
 
 
@@ -589,7 +581,6 @@ main figure figcaption span {
 }
 
 .names li {
-  /*height: 20px;*/
   height: 20px;
   margin: 2px 0 6px 54px;
   padding-left: 3px;
@@ -624,7 +615,7 @@ main figure figcaption span {
   color: #114165;
   padding: 5px 28px 5px 30px;
   margin: 0  0 3px 15px;
-  background: url('../img/Circle.png') 2px 50% no-repeat;
+  background: url('../img/Circle.png') 3px 50% no-repeat;
 }
 
 .right .side-title{
@@ -635,7 +626,6 @@ main figure figcaption span {
 }
 
 .right {
-  /*display: inline;*/
   float: left;
   margin: 1px 0px 0px 9px;
 }
@@ -660,6 +650,7 @@ main figure figcaption span {
   border-width: 1px;
   border-color: rgb(17, 65, 101);
   box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
+  -webkit-appearance: none;
 }
 
 .brand p:last-child {
@@ -707,7 +698,6 @@ main figure figcaption span {
 
 .vendors ul li {
   display: table-cell;
-  /*color: #bec6c9;*/
   font-size: 13px;
 }
 
@@ -725,7 +715,6 @@ footer ul li {
   display: inline;
   color: #b1bcc0;
   font-size: 12px;
-  /*margin: 0 6px 0 8px;*/
 }
 
 footer ul .separator {
