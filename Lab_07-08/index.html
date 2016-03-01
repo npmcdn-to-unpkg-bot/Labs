@@ -5,8 +5,11 @@
     <title>Lab 7-8</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/Myriad.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" media="(min-width: 960px)" href="css/style960.css">
+    <link rel="stylesheet" media="(min-width: 768px) and (max-width: 960px)" href="css/style768.css">
+    <link rel="stylesheet" media="(min-width: 480px) and (max-width: 768px)" href="css/style480.css">
   </head>
   <body>
   <div class="wrapper-top clearfix">
@@ -16,14 +19,26 @@
           <a class="body-top__link" href="#">
             <img src="img/logo.png" alt="">
           </a>
-        <ul class="menu clearfix">
-          <li class="menu__item"><a href="#" class="menu__link">HOME</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">ABOUT</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">BLOG</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">PRODUCTS</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">LOREM IPSUM</a></li>
-          <li class="menu__item"><a href="#" class="menu__link menu__item-menu-item-m0">DOLOR SIT AMET</a></li>
-        </ul>
+        <menu class="menu clearfix">
+          <li class="menu__item menu__first-item">
+            <a href="#" class="menu__link">HOME</a>
+          </li>
+          <li class="menu__item menu__item-n1 menu__hide-item">
+            <a href="#" class="menu__link">ABOUT</a>
+          </li>
+          <li class="menu__item menu__item-n2 menu__hide-item">
+            <a href="#" class="menu__link">BLOG</a>
+          </li>
+          <li class="menu__item menu__item-n3 menu__hide-item">
+            <a href="#" class="menu__link">PRODUCTS</a>
+          </li>
+          <li class="menu__item menu__item-n4 menu__hide-item">
+            <a href="#" class="menu__link">LOREM IPSUM</a>
+          </li>
+          <li class="menu__item menu__item-n5 menu__hide-item">
+            <a href="#" class="menu__link menu__item-menu-item-m0">DOLOR SIT AMET</a>
+          </li>
+        </menu>
       </div>
       </header>
 
@@ -42,12 +57,12 @@
           </div>
         </div>
         <div>
-          <ul class="sliders__bullets clearfix">
+          <menu class="sliders__bullets clearfix">
             <li class="sliders__bullet"><a href=""><img src="" alt=""></a></li>
             <li class="sliders__bullet"><a href=""><img src="" alt=""></a></li>
             <li class="sliders__bullet"><a href=""><img src="" alt=""></a></li>
             <li class="sliders__bullet"><a href=""><img src="" alt=""></a></li>
-          </ul>
+          </menu>
         </div>
       </div>
     </div>
@@ -94,17 +109,17 @@
           <a href="#" class="social__left-face_position">
             <img src="img/face.png" alt="" />
           </a>
-          <p class="social__left-header">PINGBULLER<br><span class="social__left-header__color">STARTS HERE</span></p>
+          <p class="social__left-header">PINGBULLER&nbsp;<span class="social__left-header__color">STARTS HERE</span></p>
           <p class="social__left-text">
             “Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.”
           </p>
 
-          <ul class="social__bullets clearfix">
+          <menu class="social__bullets clearfix">
             <li class="social__bullet"><a href=""><img src="" alt=""></a></li>
             <li class="social__bullet"><a href=""><img src="" alt=""></a></li>
             <li class="social__bullet"><a href=""><img src="" alt=""></a></li>
             <li class="social__bullet"><a href=""><img src="" alt=""></a></li>
-          </ul>
+          </menu>
         </div>
         <div class="social__right">
           <p class="social__right-header">RECENT UPDATES</p>
@@ -140,26 +155,20 @@
     <div class="wrapper-footer-top">
       <div class="footer-news clearfix">
         <div class="footer-news__article">
-          <a href="#"><img src="img/logo-bw.png" alt=""></a>
-          <p class="footer-news__Copyright_2013">
-            Copyright 2013, Pingbull AS
+          <p class="footer-news__first_title">
           </p>
-          <p class="footer-news__f-OS_fs-16p">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque</p>
+          <p class="footer-news__first_text"></p>
         </div>
         <div class="footer-news__article footer-news__centr-margin" >
-          <p class="footer-news__f-LG_fs-30p">
-            RECENT COMMENTS
+          <p class="footer-news__second_title">
           </p>
-          <p class="footer-news__f-OS_fs-16p">
-            Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis
+          <p class="footer-news__second_text">
           </p>
         </div>
         <div class="footer-news__article">
-          <p class="footer-news__f-LG_fs-30p">
-            NEWS CATEGORIES
+          <p class="footer-news__third_title">
           </p>
-          <p class="footer-news__f-OS_fs-16p">
-            Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis
+          <p class="footer-news__third_text">
           </p>
         </div>
       </div>
@@ -168,7 +177,7 @@
     <div class="wrapper-footer-bottom">
       <footer class="clearfix">
         <div class="footer-menu">
-          <ul class="footer-menu__menu">
+          <menu class="footer-menu__menu">
             <li class="footer-menu__menu-item"><a href="#" class="footer-menu__menu-link">HOME</a></li>
             <li class="footer-menu__menu-item"><a href="#" class="footer-menu__menu-link">ABOUT</a></li>
             <li class="footer-menu__menu-item"><a href="#" class="footer-menu__menu-link">BLOG</a></li>
@@ -176,7 +185,7 @@
             <li class="footer-menu__menu-item"><a href="#" class="footer-menu__menu-link">LOREM IPSUM</a></li>
             <li class="footer-menu__menu-item"><a href="#" class="footer-menu__menu-link">DOLOR SIT AMET</a></li>
             <li class="footer-menu__DesignedBy">Designed by <span class="footer-menu__right-comment_exBold">Pingbull AS</span></li>
-          </ul>
+          </menu>
         </div>
         <div class="footer-design"></div>
       </footer>
