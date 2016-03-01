@@ -7,7 +7,7 @@
   }
 
   .body-top {
-    width: 440px;
+    width: 280px;
     margin: auto;
   }
 
@@ -195,7 +195,7 @@ header {
   }
 
   .about {
-  width: 440px;
+  width: 280px;
   margin: auto;
   position: relative;
   height: 522px;
@@ -308,7 +308,7 @@ header {
 
   .social {
   /*height: 410px;*/
-  width: 440px;
+  width: 280px;
   margin: auto;
   /*position: relative;*/
   }
@@ -446,7 +446,7 @@ header {
 
   .footer-news__article {
   /*float: left;*/
-  /*width: 440px;*/
+  /*width: 280px;*/
   /*height: 200px;*/
   }
 
@@ -554,7 +554,7 @@ header {
 
 
   footer {
-  width: 440px;
+  width: 280px;
   position: relative;
   margin: auto;
   }

@@ -339,13 +339,14 @@
 }
 
 .wrapper-footer-top {
-  color: #ececec;
+  background-color: #ececec;
 }
 
 .footer-news {
   width: 960px;
   height: 200px;
-  margin: 97px auto;
+  margin: 0 auto;
+  padding: 97px 0;
   position: relative;
   overflow: hidden;
 }
