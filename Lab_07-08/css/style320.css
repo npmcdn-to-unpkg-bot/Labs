@@ -125,15 +125,15 @@ header {
   .sliders {
   margin-top: 84px;
   margin-left: 19px;
-  height: 355px;
+  height: 220px;
   }
 
   .sliders__text {
-  float: left;
+  /*float: left;*/
   width: 212px;
-  height: 194px;
+  /*height: 194px;*/
   overflow: hidden;
-  margin-top: 103px;
+  margin: 187px auto 0;
   }
 
   .sliders__f-LG_fs-60p {
@@ -141,7 +141,7 @@ header {
   font-size: 36px;
   height: 36px;
   overflow: hidden;
-  letter-spacing: -0.4px;
+  /*letter-spacing: -0.4px;*/
   color: white;
   }
 
@@ -161,6 +161,7 @@ header {
   .sliders__phone {
   float: right;
   margin-right: 12px;
+  display: none;
   }
 
   .phone__img {
@@ -172,9 +173,11 @@ header {
   }
 
   .sliders__bullets {
+    width: 88px;
+    margin: 78px auto 0;
     position: absolute;
-    bottom:60px;
-    left: 190px;
+    right: 0;
+    left: 0;
   }
 
   .sliders__bullet {
@@ -198,8 +201,8 @@ header {
   width: 280px;
   margin: auto;
   position: relative;
-  height: 522px;
-  padding-top: 78px;
+  height: 528px;
+  padding-top: 71px;
   }
 
   .about__icon-tool {
@@ -254,7 +257,7 @@ header {
   .about__article {
   position: relative;
   /*width: 155px;*/
-  float: left;
+  /*float: left;*/
   /*margin-top: 78px;*/
   margin-left: 63px;
   }
@@ -265,7 +268,7 @@ header {
 
   .about__m-14p {
   margin-top: 25px;
-  margin-bottom: 29px;
+  margin-bottom: 41px;
   }
 
   .about__f-LG_fs-30p {
@@ -282,7 +285,7 @@ header {
   color: white;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0.25px;
+  letter-spacing: -0.1px;
   height: 73px;
   overflow: hidden;
   }
@@ -291,7 +294,7 @@ header {
   font-family: 'LeagueGothic-Regular';
   font-size: 18px;
   color: white;
-  margin: 14px 0 0 315px;
+  margin: 14px 0 0 155px;
   text-decoration: none;
   }
 
@@ -302,7 +305,7 @@ header {
 
   .wrapper-social {
   background-color: #f9f9f9;
-  padding-top: 39px;
+  padding-top: 40px;
   padding-bottom: 32px;
   }
 
@@ -315,7 +318,7 @@ header {
 
   .social__left {
   position: relative;
-  width: 416px;
+  /*width: 416px;*/
   /*float: left;*/
   height: 272px;
   margin: 0 0 40px 23px;
@@ -332,9 +335,9 @@ header {
   }
 
   .social__left-header {
-    margin: 30px 0 9px 39px;
-    padding-top: 27px;
-    font-size: 30px;
+    margin: 30px 0 0px 36px;
+    padding-top: 25px;
+    font-size: 24px;
     font-family: 'LeagueGothic-Regular';
     color: #454545;
   }
@@ -344,7 +347,8 @@ header {
   }
 
 .social__left-header .social__left-header__color::before {
-  content: ' ';
+  content: '\A';
+  white-space: pre;
 }
   .social__left-text {
   font-family: 'Open Sans';
@@ -352,17 +356,18 @@ header {
   font-size: 16px;
   line-height: 24px;
   color: #454545;
-  height: 175px;
-  width: 355px;
+  height: 164px;
+  width: 178px;
   overflow: hidden;
   margin-left: 38px;
-  padding:5px 0 0 0;
+  padding:4px 0 0 0;
   }
 
   .social__bullets {
-    display: block;
-  margin: 49px 172px 0 0;
-  }
+  display: block;
+  margin: 55px auto 0;
+  width: 104px;
+}
 
   .social__bullet {
   margin-left: 4px;
@@ -384,18 +389,18 @@ header {
   }
 
   .social__right-header {
-  margin-left: 62px;
+  margin-left: -2px;
   font-size: 30px;
   font-family: 'LeagueGothic-Regular';
   color: #454545;
   }
 
   .social__right .social__right-comment {
-  width: 333px;
+  width: 280px;
   /*float: left;*/
   height: 50px;
   overflow: hidden;
-  margin: 17px 0 0 63px;
+  margin: 17px 0 0 -1px;
   line-height: 24px;
   font-family: 'Open Sans';
   font-size: 16px;
@@ -406,13 +411,15 @@ header {
   .social__right-comment_exBold {
   letter-spacing: 0.3px;
   font-weight: bolder;
+  height: 24px;
+  overflow: hidden;
   }
 
   .social__right-more {
   font-family: 'LeagueGothic-Regular';
   font-size: 18px;
   color: #454545;
-  margin: 17px 0 0 312px;
+  margin: 18px 0 0 186px;
   }
 
   .social__right-more::before {
@@ -425,14 +432,15 @@ header {
   }
 
   .logos {
-  width: 345px;
-  height: 154px;
-  margin: 127px auto 9px;
-  background: url('../img/logos480.png') 100% 100% no-repeat;
+  width: 237px;
+  height: 294px;
+  margin: 141px auto 43px;
+  background: url('../img/logos320.png') 100% 100% no-repeat;
   }
 
   .wrapper-footer-top {
   background-color: #ececec;
+  display: none;
   }
 
   .footer-news {
@@ -570,6 +578,7 @@ header {
   }
 
   .footer-menu__menu-link {
+    display: none;
   float: left;
   text-decoration: none;
   list-style: none;
@@ -590,7 +599,7 @@ header {
   }
   .footer-menu__DesignedBy {
   display: block;
-  margin: 0 auto 0;
+  margin: 42px auto 0;
   width: 100%;
   float: left;
   text-align: center;
