@@ -9,6 +9,8 @@
   .body-top {
     width: 440px;
     margin: auto;
+    position: relative;
+    z-index: 1;
   }
 
   .body-top__logo {
@@ -122,6 +124,49 @@ header {
   border-radius: 0px 0px 10px 10px;
   }
 /*///////////////////////////////////////////////////////*/
+
+.background-top {
+  width: 100%;
+  height: 246px;
+  background-color: black;
+  background-size: 100px auto;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  position: absolute;
+  top: 37%;
+  z-index: 0;
+}
+
+.background-top__arrow {
+  position:absolute;
+  transform:translateY(-50%);
+  top:50%;
+  z-index:1;
+}
+
+@media (min-width: 502px) {
+  .background-top__arrow_left {
+  left: -22px;
+  top: 327px;
+  display: inherit;
+  }
+
+  .background-top__arrow_right {
+  top: 327px;
+  right: -20px;
+  display: inherit;
+}
+}
+
+ @media (max-width: 502px) {
+   .background-top__arrow_left {
+     display: none;
+   }
+  .background-top__arrow_right {
+    display: none;
+  }
+}
+
   .sliders {
   margin-top: 84px;
   margin-left: 19px;
@@ -136,7 +181,7 @@ header {
   margin-top: 103px;
   }
 
-  .sliders__f-LG_fs-60p {
+  .sliders__text_font-top {
   font-family: 'LeagueGothic-Regular';
   font-size: 36px;
   height: 36px;
@@ -145,7 +190,7 @@ header {
   color: white;
   }
 
-  .sliders__f-LG_fs-32p {
+  .sliders__text_font-middle {
   font-family: 'LeagueGothic-Regular';
   font-size: 18px;
   overflow: hidden;
@@ -154,7 +199,7 @@ header {
   margin-top: 3px;
   }
 
-  .sliders__f-OS_fs-18p {
+  .sliders__text_font-article {
     display: none;
   }
 
@@ -174,7 +219,7 @@ header {
   .sliders__bullets {
     position: absolute;
     bottom:60px;
-    left: 190px;
+    left: 177px;
   }
 
   .sliders__bullet {
@@ -200,6 +245,7 @@ header {
   position: relative;
   height: 522px;
   padding-top: 78px;
+  box-shadow: 0px 20px 30px -15px rgba(0,0,0,0.5);
   }
 
   .about__icon-tool {
@@ -263,20 +309,21 @@ header {
   /*margin-left: 60px;*/
   }
 
-  .about__m-14p {
+  .about__article_margin {
   margin-top: 25px;
   margin-bottom: 29px;
   }
 
-  .about__f-LG_fs-30p {
+  .about__article__text_font-top {
   font-family: 'LeagueGothic-Regular';
   font-size: 24px;
   color: white;
   margin-bottom: 3px;
   letter-spacing: -0.1px;
+  text-shadow: 0px 1px 0px rgba(15, 21, 24, 0.004);
   }
 
-  .about__f-OS_fs-15p {
+  .about__article__text_font-article {
   font-family: 'Open Sans';
   font-weight: 300;
   color: white;
@@ -285,17 +332,19 @@ header {
   letter-spacing: 0.25px;
   height: 73px;
   overflow: hidden;
+  text-shadow: 0px 1px 0px rgba(15, 21, 24, 0.004);
   }
 
-  .about__f-LG_fd-18p {
+  .about__article__text_font-bottom {
   font-family: 'LeagueGothic-Regular';
   font-size: 18px;
   color: white;
   margin: 14px 0 0 315px;
   text-decoration: none;
+  text-shadow: 0px 1px 0px rgba(15, 21, 24, 0.004);
   }
 
-  .about__f-LG_fd-18p:hover {
+  .about__article__text_font-bottom:hover {
   text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
   }
 
@@ -303,11 +352,11 @@ header {
   .wrapper-social {
   background-color: #f9f9f9;
   padding-top: 39px;
-  padding-bottom: 32px;
+  /*padding-bottom: 32px;*/
   }
 
   .social {
-  /*height: 410px;*/
+  height: 716px;
   width: 440px;
   margin: auto;
   /*position: relative;*/
@@ -425,10 +474,13 @@ header {
   }
 
   .logos {
-  width: 345px;
-  height: 154px;
-  margin: 127px auto 9px;
-  background: url('../img/logos480.png') 100% 100% no-repeat;
+  /*width: 345px;*/
+  height: 232px;
+  /*margin: 127px auto 9px;*/
+  background: #f9f9f9 url('../img/logos480.png') 100% 100% no-repeat;
+  background-position: center;
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
   }
 
   .wrapper-footer-top {
@@ -442,6 +494,7 @@ header {
   padding: 80px 0 88px;
   position: relative;
   overflow: hidden;
+  box-shadow: 0px 20px 30px -15px rgba(0,0,0,0.5);
   }
 
   .footer-news__article {
@@ -606,15 +659,3 @@ header {
   font-weight: 900;
   }
 /*}*/
-
-@media (min-width: 480px) {
-  .body-top {
-    height: 548px;
-  }
-}*/
-
-@media (max-width: 320px) {
-  .body-top {
-    height: 516px;
-  }
-}

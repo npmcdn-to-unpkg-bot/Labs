@@ -9,6 +9,8 @@
   .body-top {
     width: 280px;
     margin: auto;
+    position: relative;
+    z-index: 1;
   }
 
   .body-top__logo {
@@ -122,6 +124,45 @@ header {
   border-radius: 0px 0px 10px 10px;
   }
 /*///////////////////////////////////////////////////////*/
+
+.background-top {
+  /*width: 100%;
+  height: 400px;
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  top: 33%;
+  z-index: 0;*/
+}
+.background-top__arrow {
+  position:absolute;
+  transform:translateY(-50%);
+  top:50%;
+  z-index:1;
+}
+
+@media (max-width: 480px) {
+  .background-top__arrow_left {
+  left: -22px;
+  top: 327px;
+  display: inherit;
+  }
+
+  .background-top__arrow_right {
+  top: 327px;
+  right: -19px;
+  display: inherit;
+}
+}
+
+ /*@media (max-width: 1019px) {
+   .background-top__arrow_left {
+     display: none;
+   }
+  .background-top__arrow_right {
+    display: none;
+  }
+}*/
   .sliders {
   margin-top: 84px;
   margin-left: 19px;
@@ -136,7 +177,7 @@ header {
   margin: 187px auto 0;
   }
 
-  .sliders__f-LG_fs-60p {
+  .sliders__text_font-top {
   font-family: 'LeagueGothic-Regular';
   font-size: 36px;
   height: 36px;
@@ -145,7 +186,7 @@ header {
   color: white;
   }
 
-  .sliders__f-LG_fs-32p {
+  .sliders__text_font-middle {
   font-family: 'LeagueGothic-Regular';
   font-size: 18px;
   overflow: hidden;
@@ -154,7 +195,7 @@ header {
   margin-top: 3px;
   }
 
-  .sliders__f-OS_fs-18p {
+  .sliders__text_font-article {
     display: none;
   }
 
@@ -194,6 +235,7 @@ header {
   }
 
   .wrapper-about {
+  border-top: 1px solid;
   background-image: linear-gradient(to top,  #322539 0%,#745083 100%);
   }
 
@@ -203,6 +245,7 @@ header {
   position: relative;
   height: 528px;
   padding-top: 71px;
+  box-shadow: 0px 20px 30px -15px rgba(0,0,0,0.5);
   }
 
   .about__icon-tool {
@@ -266,20 +309,21 @@ header {
   /*margin-left: 60px;*/
   }
 
-  .about__m-14p {
+  .about__article_margin {
   margin-top: 25px;
   margin-bottom: 41px;
   }
 
-  .about__f-LG_fs-30p {
+  .about__article__text_font-top {
   font-family: 'LeagueGothic-Regular';
   font-size: 24px;
   color: white;
   margin-bottom: 3px;
   letter-spacing: -0.1px;
+  text-shadow: 0px 1px 0px rgba(15, 21, 24, 0.004);
   }
 
-  .about__f-OS_fs-15p {
+  .about__article__text_font-article {
   font-family: 'Open Sans';
   font-weight: 300;
   color: white;
@@ -288,17 +332,19 @@ header {
   letter-spacing: -0.1px;
   height: 73px;
   overflow: hidden;
+  text-shadow: 0px 1px 0px rgba(15, 21, 24, 0.004);
   }
 
-  .about__f-LG_fd-18p {
+  .about__article__text_font-bottom {
   font-family: 'LeagueGothic-Regular';
   font-size: 18px;
   color: white;
   margin: 14px 0 0 155px;
   text-decoration: none;
+  text-shadow: 0px 1px 0px rgba(15, 21, 24, 0.004);
   }
 
-  .about__f-LG_fd-18p:hover {
+  .about__article__text_font-bottom:hover {
   text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
   }
 
@@ -450,6 +496,7 @@ header {
   padding: 80px 0 88px;
   position: relative;
   overflow: hidden;
+  box-shadow: 0px 20px 30px -15px rgba(0,0,0,0.5);
   }
 
   .footer-news__article {
@@ -615,15 +662,3 @@ header {
   font-weight: 900;
   }
 /*}*/
-
-@media (min-width: 480px) {
-  .body-top {
-    height: 548px;
-  }
-}*/
-
-@media (max-width: 320px) {
-  .body-top {
-    height: 516px;
-  }
-}
