@@ -269,7 +269,6 @@
 .wrapper-social {
   background-color: #f9f9f9;
   padding-top: 102px;
-  /*padding-bottom: 32px;*/
 }
 
 .social {
@@ -382,7 +381,6 @@
 }
 
 .logos {
-  /*width: 775px;*/
   height: 120px;
   margin: auto;
   background: #f9f9f9 url('../img/logos.png') 100% 100% no-repeat;
@@ -448,7 +446,6 @@
   color: #787878;
   font-size: 15px;
   line-height: 24px;
-  /*margin-top: 7px;*/
   letter-spacing: 0.3px;
   content: 'Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque';
 }
@@ -528,7 +525,6 @@ footer {
   float: right;
   margin-top: 53px;
   font-size: 12px;
-  /*letter-spacing: 0.2px;*/
   font-family: 'Open Sans';
   color: white;
 }

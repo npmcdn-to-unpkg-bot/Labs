@@ -1,4 +1,3 @@
-/*@media (min-width: 768px) {*/
   .wrapper-top {
     background: url("../img/background-top.jpg") 0 0 no-repeat;
     height: 797px;
@@ -19,7 +18,6 @@
   }
 
   .body-top__link {
-    /*float: left;*/
     display: block;
   }
 
@@ -34,7 +32,6 @@
   color: white;
   font-size: 24px;
   font-family: 'LeagueGothic-Regular';
-  /*padding: 0 5px;*/
   margin: 29px 51px 50px 0;
   line-height: 32px;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
@@ -264,7 +261,6 @@
   .wrapper-social {
   background-color: #f9f9f9;
   padding-top: 100px;
-  /*padding-bottom: 32px;*/
   }
 
   .social {
@@ -316,7 +312,6 @@
   width: 253px;
   overflow: hidden;
   margin-left: 35px;
-  /*padding: 0 35px 52px 38px;*/
   }
 
   .social__bullets {
@@ -386,7 +381,6 @@
   }
 
   .logos {
-  /*width: 725px;*/
   height: 120px;
   margin: auto;
   background: #f9f9f9 url('../img/logos768.png') 100% 100% no-repeat;
@@ -417,27 +411,6 @@
 
   .footer-news__centr-margin {
   margin: 0 63px;
-  }
-
-  .footer-news__first_title {
-  /*font-size: 16px;
-  font-family: "Georgia";
-  color: rgb(197, 197, 197);
-  font-style: italic;
-  line-height: 1.5;
-  text-align: left;
-  margin-top: 14px;
-  letter-spacing: -0.2px;
-  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);*/
-
-  }
-
-  .footer-news__first_title::after {
-    /*font-family: 'LeagueGothic-Regular';
-    font-size: 30px;
-    color: #454545;
-    margin: -2px 0 0 -3px;
-    content: 'NEWS CATEGORIES';*/
   }
 
   .footer-news__first_title::before {
@@ -552,9 +525,7 @@
   position: absolute;
   bottom: -115px;
   right: 5px;
-  /*margin-top: 53px;*/
   font-size: 12px;
-  /*letter-spacing: 0.2px;*/
   font-family: 'Open Sans';
   color: white;
   }
@@ -562,4 +533,3 @@
   .footer-menu__right-comment_exBold {
   font-weight: bolder;
   }
-/*}*/

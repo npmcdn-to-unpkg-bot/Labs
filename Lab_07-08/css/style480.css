@@ -1,7 +1,5 @@
-/*@media (min-width: 768px) {*/
   .wrapper-top {
     background: url("../img/background-top.jpg") 0 0 no-repeat;
-    /*height: 797px;*/
     width: 100%;
     position: relative;
   }
@@ -15,22 +13,14 @@
 
   .body-top__logo {
     padding: 70px 0 0 0;
-    /*margin: 70px auto 0;*/
     display: block;
     text-align: center;
-    /*position: relative;*/
   }
-
-header {
-  /*position: relative;*/
-}
-
 
   .body-top__link {
     display: block;
   }
 
-/*////////////////////////////////////////////////////////*/
   .menu__link {
   list-style: none;
   text-decoration: none;
@@ -62,7 +52,6 @@ header {
   position: absolute;
   left: 0;
   right: 0;
-  /*overflow: hidden;*/
   }
 
   .menu__item {
@@ -123,7 +112,6 @@ header {
   transition-delay: 0.5s;
   border-radius: 0px 0px 10px 10px;
   }
-/*///////////////////////////////////////////////////////*/
 
 .background-top {
   width: 100%;
@@ -299,14 +287,11 @@ header {
 
   .about__article {
   position: relative;
-  /*width: 155px;*/
   float: left;
-  /*margin-top: 78px;*/
   margin-left: 63px;
   }
 
   .about__article:first-child {
-  /*margin-left: 60px;*/
   }
 
   .about__article_margin {
@@ -352,26 +337,20 @@ header {
   .wrapper-social {
   background-color: #f9f9f9;
   padding-top: 39px;
-  /*padding-bottom: 32px;*/
   }
 
   .social {
   height: 716px;
   width: 440px;
   margin: auto;
-  /*position: relative;*/
   }
 
   .social__left {
   position: relative;
   width: 416px;
-  /*float: left;*/
   height: 272px;
   margin: 0 0 40px 23px;
   background-color: white;
-  /*background-image: url('../img/Comment.png');
-  background-repeat: no-repeat;
-  background-size: auto auto;;*/
   }
 
   .social__left-face_position {
@@ -441,7 +420,6 @@ header {
 
   .social__right .social__right-comment {
   width: 333px;
-  /*float: left;*/
   height: 50px;
   overflow: hidden;
   margin: 17px 0 0 63px;
@@ -474,9 +452,7 @@ header {
   }
 
   .logos {
-  /*width: 345px;*/
   height: 232px;
-  /*margin: 127px auto 9px;*/
   background: #f9f9f9 url('../img/logos480.png') 100% 100% no-repeat;
   background-position: center;
   border-top: 1px solid #d8d8d8;
@@ -489,7 +465,6 @@ header {
 
   .footer-news {
   width: 445px;
-  /*height: 196px;*/
   margin: auto;;
   padding: 80px 0 88px;
   position: relative;
@@ -497,35 +472,8 @@ header {
   box-shadow: 0px 20px 30px -15px rgba(0,0,0,0.5);
   }
 
-  .footer-news__article {
-  /*float: left;*/
-  /*width: 440px;*/
-  /*height: 200px;*/
-  }
-
   .footer-news__centr-margin {
   margin: 57px 0px;
-  }
-
-  .footer-news__first_title {
-  /*font-size: 16px;
-  font-family: "Georgia";
-  color: rgb(197, 197, 197);
-  font-style: italic;
-  line-height: 1.5;
-  text-align: left;
-  margin-top: 14px;
-  letter-spacing: -0.2px;
-  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);*/
-
-  }
-
-  .footer-news__first_title::after {
-    /*font-family: 'LeagueGothic-Regular';
-    font-size: 30px;
-    color: #454545;
-    margin: -2px 0 0 -3px;
-    content: 'NEWS CATEGORIES';*/
   }
 
   .footer-news__first_title::before {
@@ -658,4 +606,3 @@ header {
   .footer-menu__right-comment_exBold {
   font-weight: 900;
   }
-/*}*/
