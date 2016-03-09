@@ -47,7 +47,7 @@ function QuestionBlock (title) {
   button.setAttribute("type", "submit");
   button.setAttribute("value", "Проверить мои результаты");
   button.className = "btn btn-primary col-sm-4 col-sm-offset-4";
-  button.style = "height: 48px;";
+  button.style = "height: 48px; background-color: #d0e1f1; color: #000; border: 1px black solid;";
   form.parentNode.insertBefore(button, form.nextSibling);
 }
 
