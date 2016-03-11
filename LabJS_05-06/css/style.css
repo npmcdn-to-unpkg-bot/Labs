@@ -1,0 +1,9 @@
+.timer {
+    text-align: center;
+    margin: auto;
+    position: relative;
+    background-color: lightgrey;
+    border-radius: 16px;
+    padding: 10px;
+    border: 1px black solid;
+}
