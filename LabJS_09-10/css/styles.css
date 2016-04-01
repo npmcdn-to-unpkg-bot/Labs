@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#tabs
+{
+    overflow: auto;
+    width: 100%;
+    list-style: none;
+    margin: 10px 0 0 0;
+    padding: 0;
+    transition: 2s;
+    position: relative;
+}
+
+#tabs li
+{
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+#tabs a
+{
+    box-shadow: inset 0px -1px 1px rgb(0, 0, 0), -3px 6px 10px rgb(0, 0, 0);
+    border-radius: 5px 30px 0px 0px;
+    color: #fff;
+    float: left;
+    font: bold 12px/35px 'Lucida sans', Arial, Helvetica;
+    height: 35px;
+    padding: 0 30px;
+    text-decoration: none;
+    opacity: 0.5;
+    overflow: hidden;
+    position: relative;
+}
+
+#tabs #current {
+    position: absolute;
+    transition: 0.75s;
+}
+
+#tabs a:hover
+{
+    opacity: 0.4;
+}
+
+
+#tabs #current a
+{
+    box-shadow: 0px 0 0 rgba(0, 0, 0, .2);
+    text-shadow: none;
+    color: #ddd;
+    opacity: 1;
+}
+
+#tabs .login a{
+    opacity: 1;
+    box-shadow: inset 0px 0px 0px rgb(0, 0, 0), -3px 6px 10px rgb(0, 0, 0);
+
+}
+
+#content
+{
+    background-color: #fff;
+    border-radius: 0 0 2px 2px;
+    padding: 30px;
+}
+
+.tooltip {
+	display:none;
+	position:absolute;
+	border:1px solid #333;
+	background-color:#161616;
+	border-radius:5px;
+	padding:5px;
+	color: white;
+    opacity: 0.7;
+	font:12px Arial;
+}
+
+.form {
+    width: 220px;
+}
+
+.form div {
+    position: relative;
+    clear: both;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.form .text-input {
+    float: right;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+}
+
+.remember_check {
+   float: right;
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+}
+
+.form label {
+    float: left;
+}
+
+.jcarousel-wrapper {
+    margin: 20px auto;
+    position: relative;
+    border: 10px solid #fff;
+    width: 600px;
+    height: 400px;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    -webkit-box-shadow: 0 0 2px #999;
+       -moz-box-shadow: 0 0 2px #999;
+            box-shadow: 0 0 2px #999;
+}
+
+.jcarousel-wrapper .photo-credits {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    font-size: 13px;
+    color: #fff;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
+    opacity: .66;
+}
+
+.jcarousel-wrapper .photo-credits a {
+    color: #fff;
+}
+
+/** Carousel **/
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    float: left;
+    width: 600px;
+    height: 400px;
+}
+
+/** Carousel Controls **/
+
+.jcarousel-control-prev,
+.jcarousel-control-next {
+    position: absolute;
+    top: 200px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #4E443C;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 24px/27px Arial, sans-serif;
+    -webkit-border-radius: 30px;
+       -moz-border-radius: 30px;
+            border-radius: 30px;
+    -webkit-box-shadow: 0 0 2px #999;
+       -moz-box-shadow: 0 0 2px #999;
+            box-shadow: 0 0 2px #999;
+}
+
+.jcarousel-control-prev {
+    right: -50px;
+}
+
+.jcarousel-control-next {
+    left: -50px;
+}
+
+.jcarousel-control-prev:hover span,
+.jcarousel-control-next:hover span {
+    display: block;
+}
+
+.jcarousel li img{
+    /*float: right;*/
+    width: 600px;
+    height: 400px;
+}
+
+.jcarousel[dir=rtl] li {
+    float: right;
+}
+
+.jcarousel-pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    text-align: center;
+}
+
+.jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 14px;
+    min-width: 14px;
+    background: #fff;
+    color: #4E443C;
+    border-radius: 14px;
+    padding: 3px;
+    text-align: center;
+    margin-right: 2px;
+    opacity: .75;
+}
+
+.jcarousel-pagination a.active {
+    background: #4E443C;
+    color: #fff;
+    opacity: 1;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+}
+
+#country_id {
+    position: absolute;
+    display: none;
+}
+
+
+#tabs-2 .css input[type=checkbox] {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+#tabs-2 .css label {
+	cursor: pointer;
+}
+#tabs-2 .css label:after {
+	content: " ";
+	display: inline-block;
+	width: 29px;
+	height: 29px;
+	background: url(../img/checkbox.png);
+	position: relative;
+	top: 3px;
+	margin-left: 15px;
+}
+#tabs-2 .css input[type=checkbox]:checked + label:after {
+background-position: 0 -87px;
+}
+#tabs-2 .css label:hover:after {
+background-position: 0 -29px;
+}
+#tabs-2 .css input[type=checkbox]:checked + label:hover:after {
+background-position: 0 -58px;
+}
+
+#tabs-2 fieldset {
+    padding: 10px;
+    width: 150px;
+}
+
+#tabs-2 .niceCheck {
+/*content: " ";*/
+	display: inline-block;
+	width: 29px;
+	height: 29px;
+	background: url(../img/checkbox.png);
+	position: relative;
+	top: 3px;
+	margin-left: 11px;
+}
+#tabs-2 .niceCheck input {
+display: none;
+}
+
+#tabs-2 .js label {
+cursor: pointer;
+}
+
+.menu {
+    background-color: #333;
+    border-radius: 10px;
+    color: white;
+}
+
+.menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+	
+.menu li {
+    display: inline-block;
+    position: relative;
+}	
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.sub-menu{    
+    background-color:#555;
+    position:absolute;
+    left:0;
+    top:40px; /* make this equal to the line-height of the links (specified below) */
+    width:200px;
+}
+.menu li li {
+    position:relative;
+    margin:0;
+    display:block;
+}
+.menu li li ul {
+    position:absolute;
+    top:0;
+    left:200px; /* make this equal to the width of the sub .menu above */
+    margin:0;
+}
+
+/* style all links */
+.menu a {
+    line-height:40px;
+    padding:0 12px;
+    margin:0 12px;
+}
+.menu a {
+    color:#fff;
+    text-decoration:none;
+    display:block;
+}
+.menu a:hover,
+.menu a:focus,
+.menu a:active {
+    color: #ccc;
+}
+
+/* style sub level links */
+.menu-dropdown li a {
+    border-bottom:solid 1px #666;
+    margin:0 10px;
+    padding:0;
+}
+.menu-dropdown li:last-child a {
+    border-bottom:none;
+}
+
+/* show arrows for dropdowns */
+.menu-dropdown > a {
+    background-image:url('../img/arrow-down.png');
+    background-position:right 20px;
+    background-repeat:no-repeat;
+}
+
+.sub-menu .menu-dropdown > a {
+    background-image:url('../img/arrow-right.png');
+    background-position:right 16px;
+    background-repeat:no-repeat;
+}
+
+.sub-menu {
+    display: none;
+}
