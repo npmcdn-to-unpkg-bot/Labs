@@ -1,0 +1,18 @@
+{
+  "name": "LabJS_17-18",
+  "description": "LabJS_17-18",
+  "version": "1.0.0",
+  "author": "DEN",
+  "repository": "",
+  "license": "ISC",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "main": "script.js",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-uglify": "^1.0.1"
+  }
+}

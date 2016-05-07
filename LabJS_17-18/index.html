@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>LABJS_17-18</title>
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="css/styles.min.css">
+    
+</head>
+
+<body>
+
+    <div>
+        <ul id="tabs">
+            <li id="current"><a href="#tabs-1" style="background: green;">Carousel</a></li>
+            <li><a href="#tabs-2" style="background: blue;">CheckBoxes</a></li>
+            <li><a href="#tabs-3" style="background: red;">Drop down menu</a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <div id="tabs-1">
+            <select name="select_id" id="select_id" tabindex="1">
+                <option value="">Select number</option>
+                <optgroup label="first five">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </optgroup>
+                <optgroup label="second five">
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </optgroup>
+                <optgroup label="third five">
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                </optgroup>
+                <optgroup label="last">
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                </optgroup>
+		    </select>
+            <div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul class=".jcarousel-list">
+                        <li class="jcarousel__item_1"><img src="img/1.jpg" alt=""></li>
+                        <li class="jcarousel__item_2"><img src="img/2.jpg" alt=""></li>
+                        <li class="jcarousel__item_3"><img src="img/3.jpg" alt=""></li>
+                        <li class="jcarousel__item_4"><img src="img/4.jpg" alt=""></li>
+                        <li class="jcarousel__item_5"><img src="img/5.jpg" alt=""></li>
+                        <li class="jcarousel__item_6"><img src="img/6.jpg" alt=""></li>
+                        <li class="jcarousel__item_7"><img src="img/7.jpg" alt=""></li>
+                        <li class="jcarousel__item_8"><img src="img/8.jpg" alt=""></li>
+                        <li class="jcarousel__item_9"><img src="img/9.jpg" alt=""></li>
+                        <li class="jcarousel__item_10"><img src="img/10.jpg" alt=""></li>
+                        <li class="jcarousel__item_11"><img src="img/11.jpg" alt=""></li>
+                        <li class="jcarousel__item_12"><img src="img/12.jpg" alt=""></li>
+                        <li class="jcarousel__item_13"><img src="img/13.jpg" alt=""></li>
+                        <li class="jcarousel__item_14"><img src="img/14.jpg" alt=""></li>
+                        <li class="jcarousel__item_15"><img src="img/15.jpg" alt=""></li>
+                        <li class="jcarousel__item_16"><img src="img/16.jpg" alt=""></li>
+                        <li class="jcarousel__item_17"><img src="img/17.jpg" alt=""></li>
+                        <li class="jcarousel__item_18"><img src="img/18.jpg" alt=""></li>
+                        <li class="jcarousel__item_19"><img src="img/19.jpg" alt=""></li>
+                    </ul>
+                </div>
+                <a href="#" class="jcarousel-control-next " data-jcarouselcontrol="true">‹</a>
+                <a href="#" class="jcarousel-control-prev " data-jcarouselcontrol="true">›</a>
+                <div class="jcarousel-pagination" data-jcarouselpagination="true">
+                    <!-- Pagination items will be generated in here -->
+                </div>
+            </div>
+        </div>
+        <div id="tabs-2">
+            <form action="" class="css">
+                <fieldset>
+                    <legend>CSS</legend>
+                    <input type="checkbox" id="css-check1">
+                    <label for="css-check1">Чекбокс 1:</label>
+                    <input type="checkbox" id="css-check2">
+                    <label for="css-check2">Чекбокс 2:</label>
+                    <input type="checkbox" id="css-check3">
+                    <label for="css-check3">Чекбокс 3:</label>
+                </fieldset>
+            </form>
+
+            <form action="" class="js">
+                <fieldset>
+                    <legend>JavaScript</legend>
+                    <label for="test-check1" class="niceLabel">Чекбокс 1:</label>
+                    <span class="niceCheck">
+                        <input type="checkbox" id="test-check1" >
+                    </span>
+                    <label for="test-check2" class="niceLabel">Чекбокс 2:</label>
+                    <span class="niceCheck">
+                        <input type="checkbox" id="test-check2" >
+                    </span>
+                    <label for="test-check3" class="niceLabel">Чекбокс 3:</label>
+                    <span class="niceCheck">
+                        <input type="checkbox" id="test-check3" >
+                    </span>
+                </fieldset>
+            </form>
+        </div>
+        <div id="tabs-3">
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li class="menu-dropdown">
+                        <a href="#">Item 3</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Sub Item 1</a></li>
+                            <li><a href="#">Sub Item 2</a></li>
+                            <li class="menu-dropdown">
+                                <a href="#">Sub Item 3</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Sub sub item 1</a></li>
+                                    <li><a href="#">Sub sub item 2</a></li>
+                                    <li><a href="#">Sub sub item 3</a></li>
+                                    <li><a href="#">Sub sub item 4</a></li>
+                                    <li><a href="#">Sub sub item 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Sub Item 4</a></li>
+                            <li><a href="#">Sub Item 5</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="tabs-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ut odit voluptas! Molestias cupiditate voluptatum qui earum distinctio, esse dolores laudantium doloribus libero, ad porro harum? Earum ipsa atque sapiente.</p>
+            <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit,
+                magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus
+                interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+        </div>
+        <div id="login">
+            <form action="">
+                <fieldset>
+                    <legend>Login form</legend>
+                    <div class="form">
+                        <div>
+                            <input type="textbox" id="firstname" class="text-input masterTooltip" title="Please provide your firstname.">
+                            <label for="firstname">Login</label>
+                        </div>
+                        <div>
+                            <input type="password" id="password" class="text-input masterTooltip" title="Please provide also your password.">
+                            <label for="lastname">Password</label>
+                        </div>
+                        <div>
+                            <label for="remember">Remember my credentials.</label>
+                            <input type="checkbox" id="remember" class="remember_check masterTooltip" title="Remember my credentials.">
+                        </div>
+                        <div>
+                            <input type="submit" id="submit" class="masterTooltip" title="Submit form" value="Submit form">
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+	<script src="js/script.main.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#select_id").selectbox();
+        });
+    </script>
+
+</body>
+</html>
