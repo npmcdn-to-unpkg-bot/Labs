@@ -1,4 +1,486 @@
+$width-block: 1160px;
+$width-wrapper: 1240px;
+$color-blue: #248cec;
+$color-gold: #f4b60d;
+$color-grey: #2a2d32;
+$font-UbuntuM: 'Ubuntu Medium';
+$font-Arial: Arial, Helvetica, sans-serif;
+//Usage: @include font-face('Kent Medium','KentMed', normal (optional), bold (optional));
+@mixin font-face($fontname,$filename,$fontstyle: normal,$fontweight: normal) {
+	@font-face {
+	font-family: '#{$fontname}';
+	src: url('../fonts/#{$filename}.eot');
+	src: 
+		 url('../fonts/#{$filename}.ttf') format('truetype');
+		//svg id supports mixed case and hyphens inside, see http://j.mp/U7A83a
+
+	font-style: $fontstyle;
+	font-weight: $fontweight;
+  }
+}
+
+@include font-face(Ubuntu Regular,Ubuntu-R);
+@include font-face(Ubuntu Medium,Ubuntu-M);
+@include font-face(Ubuntu Large,Ubuntu-L);
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
 * {
   padding: 0;
   margin: 0;
+}
+
+.wrapper-top {
+  width: $width-wrapper;
+  margin: auto;
+}
+
+
+.top-bar {
+  width: $width-block;
+  margin: 36px auto;
+  
+  .logo {
+    float: left;
+    margin-left: 5px;
+  }
+}
+
+.social {
+  list-style: none;
+  
+  li {
+    float: right; 
+    margin: 8px;
+  }
+  
+  .fa {
+    font: 16px;
+    color: grey;
+  }
+  
+  .fa:hover {
+    color: $color-blue;
+  }
+}
+
+.nav {
+  width: $width-block;
+  margin: auto;
+}
+
+.nav-bar {
+  list-style: none;
+  background-color: $color-grey;
+  
+  .nav-link {
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: white;
+    padding: 23px 40px;
+    font-family: 'Ubuntu Regular';
+    border-right: solid 1px #181a1d;
+  }
+  
+  .nav-link:hover {
+    color: $color-gold; 
+  }
+  
+  .selected {
+    background-color: $color-blue;
+  }
+  
+  .nav-search {
+    position: relative;
+    float: right;
+    margin: 9px;
+    color: #5b5d61;
+  }
+  
+  .nav-search-input {
+    border: 1px solid #181a1d;
+    background-color: #35383c;
+    text-indent: 14px;
+    height: 40px;
+    width: 242px;
+}
+
+  .nav-search .fa-search { 
+    position: absolute;
+    top: 12px;
+    right: 14px;
+  }
+
+} 
+
+.article-col {
+  float: left;
+  width: 360px;
+}
+
+.article-col:nth-child(even) {
+  margin: 0 40px;
+}
+
+.article-wrapper {
+  margin: auto;
+  width: $width-block;
+}
+
+.article-num {
+  font-family: $font-UbuntuM;
+  font-size: 90px;
+  color: #e9e9ea;
+  width: 120px;
+  float: left;
+  margin-top: -20px;
+}
+
+.article {
+  float: left;
+}
+
+.article-title {
+  font-family: $font-UbuntuM;
+  font-size: 20px;
+  p {
+    margin-bottom: 25px;
+  }
+}
+.article-text {
+  width: 240px;
+  font-family: $font-Arial;
+  font-size: 13px;
+  line-height: 1.5em;
+  height: 55px;
+  overflow: hidden;
+  color: #8a8a8a;
+  margin-bottom: 20px;
+}
+
+.article-link {
+  font-family: $font-UbuntuM;
+  font-size: 13px;
+  text-decoration: none;
+  color: #2a2b2e;
+  i {
+    color: $color-blue;
+  }
+}
+
+.article-link:hover {
+  color: $color-blue;
+  i {
+    color: #989fb3;
+  }
+}
+
+.services-wrapper {
+  margin: 85px 0 0 0;
+  height: 500px;
+  background-color: $color-grey;
+}
+
+.services {
+  margin: auto;
+  width: $width-block;
+}
+  
+.services-title {
+  font-family: $font-UbuntuM;
+  font-size: 24px;
+  color: #fff;
+  padding-top: 46px;
+  margin-bottom: 56px;
+}
+
+  .service-figure__margin {
+    margin-left: 40px;
+  }
+  
+.service-figure {
+  float: left;
+  width: 260px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-family: $font-UbuntuM;
+  font-size: 16px;
+  p {
+    background-image: url("../img/pic-background.jpg");
+    height: 260px;
+    overflow: hidden;
+  }
+  
+  figcaption {
+    margin-top: 35px;
+  }
+}
+
+.service-figure:hover {
+  color: $color-gold;
+  img {
+    opacity: 0.1;
+  }
+}
+
+.news-item {
+  margin-top: 30px;
+}
+
+.news {
+  width: 560px;
+  float: left;
+}
+
+.news-top {
+  padding-top: 62px;
+  margin-bottom: 48px;
+  font-family: $font-UbuntuM;
+  font-size: 24px;
+}
+
+.news-logo {
+  float: left;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  .news-month {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: $color-blue;
+    top: 10px;
+    left: -20px;
+    color: #fff;
+    font-family: $font-UbuntuM;
+    font-size: 15px;
+    text-align: center;
+    line-height: 40px;
+  }
+  .news-day {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: $color-gold;
+    top: 50px;
+    left: -20px;
+    color: #000;
+    font-family: $font-UbuntuM;
+    font-size: 15px;
+    text-align: center;
+    line-height: 40px;
+  }
+}
+
+.news-banners {
+  height: 542px;
+  background-color: #f7f7f7;
+  overflow: hidden;
+}
+
+.news-banners-wrapper {
+  margin: auto;
+  width: $width-block;
+  
+}
+
+.news-body {
+  margin-left: 30px;
+  float: left;
+  width: 380px;
+  
+  .news-head {
+    margin-top: 8px;
+  }
+  
+  .news-title{
+    font-family: $font-UbuntuM;
+    font-size: 16px;
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+  
+  .news-title:hover {
+    a {
+      color: $color-blue;
+    }
+  }
+  
+  .news-details {
+    font-family: $font-Arial;
+    font-size: 13px;
+    margin: 10px 0 20px 0;
+    a {
+      text-decoration: none;
+      color: #9d9d9d; 
+    }
+    span {
+      color: $color-blue;
+    }
+  }
+  
+  .news-text {
+    font-family: $font-Arial;
+    font-size: 13px;
+    color: #9d9d9d;
+    line-height: 1.5em;
+  }
+  
+}
+
+///////////////////////////////////
+.banners {
+  float: left;
+  width: 560px;
+  margin-left: 40px;
+}
+.banners-accordion {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  padding-left: 50px;
+  line-height: 40px;
+  width: 560px;
+  height: 40px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 13px;
+  transition: 0.4s;
+  font-family: $font-UbuntuM;
+  border: 1px solid #e8e8e8;
+}
+
+.banners-accordion.active, .banners-accordion:hover {
+  background-color: $color-gold;
+  color: #fff;
+}
+
+.banners-accordion:before {
+  content: '\02795';
+  font-size: 13px;
+  float: left;
+  margin-left: -40px;
+  padding-right: 8px;
+  border-right: 2px #e8e8e8 solid;
+}
+
+.banners-accordion.active:before {
+  content: "\2796";
+}
+
+.banners-panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s ease-in-out;
+  opacity: 0;
+  p {
+    margin: 26px 0 43px 36px;
+    font-family: $font-Arial;
+    font-size: 13px;
+    color: #8a8a8a;
+    line-height: 1.5em;
+  }
+}
+
+.banners-panel.show {
+    opacity: 1;
+    max-height: 500px;  
+}
+
+.banners-top {
+  padding-top: 62px;
+  margin-bottom: 48px;
+  font-family: $font-UbuntuM;
+  font-size: 24px;
+}
+
+.logos {
+  margin: auto;
+  width: $width-block;
+  height: 240px;
+  img {
+    margin: 88px auto;
+  }
+}
+
+.footer-wrapper {
+  height: 385px;
+  background-color: $color-grey;
+}
+
+.footer {
+  margin: auto;
+  width: $width-block;
+}
+
+.footer-links {
+  float: left;
+  width: 260px;
+  li {
+    list-style: none;
+  }
+  
+  p {
+    font-family: $font-UbuntuM;
+    font-size: 16px;
+    padding-top: 64px;
+    padding-bottom: 40px;
+    color: #fff;
+  }
+  
+  a {
+    text-decoration: none;
+    line-height: 36px;
+    font-size: 13px;
+    font-family: $font-Arial;
+    color: grey;
+  }
+  
+  a:hover {
+    color: $color-blue;
+  }
+}
+
+.footer-links__margin {
+  margin-right: 40px;
+}
+
+.footer-li__border {
+  border-bottom: solid 1px grey;
+}
+
+.footer-bar {
+  margin-top: 56px;
+  background-color: #35383c;
+  height: 60px;
+}
+
+.footer-contacts {
+  margin: auto;
+  width: $width-block;
+  li {
+    list-style: none;
+    float: left;
+    margin-right: 40px;
+  }
+  a {
+    color: grey;
+    font-family: $font-Arial;
+    font-size: 12px;
+    line-height: 60px;
+    text-decoration: none;
+  }
+  .copyright {
+    float: right;
+  }
 }

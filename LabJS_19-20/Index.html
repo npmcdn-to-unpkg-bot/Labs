@@ -5,28 +5,253 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="css/StyleSheet.css" />
-    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/styles.min.css" />
     <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
 </head>
 
 <body>
-    <header id="header">
-        <div class="top-bar">
-            <div class="">
-                <a href="#"><img class="logo" src="img/logo.png" alt="logo" /></a>
+    <div class="wrapper-top">
+        <header class="clearfix header">
+            <div class="top-bar clearfix">
+                <div class="logo">
+                    <a href="#"><img class="logo" src="img/logo.png" alt="logo" /></a>
+                </div>
+                <div class="icon-bar clearfix">
+                    <ul class="social">
+                        <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="icon-bar">
-                <ul class="social">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fa fa-skype"></i></a></li>
+        </header>
+        <div class="nav">
+            <ul class="nav-bar clearfix">
+                <li class="nav-element"><a href="#" class="nav-link selected">HOME</a></li>
+                <li class="nav-element"><a href="#" class="nav-link">FEATURES</a></li>
+                <li class="nav-element"><a href="#" class="nav-link">SERVICES</a></li>
+                <li class="nav-element"><a href="#" class="nav-link">NEWS</a></li>
+                <li class="nav-element"><a href="#" class="nav-link">SHOP</a></li>
+                <div class="nav-search">
+                    <input class="nav-search-input" placeholder="Search...">
+                    <span class="fa fa-search"></span>
+                </div>
+            </ul>
+        </div>
+        <div class="jcarousel-wrapper">
+            <div class="jcarousel">
+                <ul class=".jcarousel-list">
+                    <li class="jcarousel__item_1"><img src="img/Top-Background1.jpg" alt=""></li>
+                    <li class="jcarousel__item_2"><img src="img/Top-Background2.jpg" alt=""></li>
+                    <li class="jcarousel__item_3"><img src="img/Top-Background3.jpg" alt=""></li>
                 </ul>
             </div>
+            <!--<a href="#" class="jcarousel-control-next " data-jcarouselcontrol="true">‹</a>
+            <a href="#" class="jcarousel-control-prev " data-jcarouselcontrol="true">›</a>-->
+            <div class="jcarousel-pagination" data-jcarouselpagination="true">
+                <!-- Pagination items will be generated in here -->
+            </div>
         </div>
-    </header>
+        <div class="article-wrapper clearfix">
+            <div class="article-col">
+                <div class="article-num">01</div>
+                <div class="article">
+                    <div class="article-title">
+                        <img src="img/settings.png" alt="">
+                        <p>Power Inside</p>
+                    </div>
+                    <div class="article-text">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</div>
+                    <a href="" class="article-link">Read More &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="article-col">
+                <div class="article-num">02</div>
+                <div class="article">
+                    <div class="article-title">
+                        <img src="img/params.png" alt="">
+                        <p>New Technologies</p>
+                    </div>
+                    <div class="article-text">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</div>
+                    <a href="" class="article-link">Read More &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="article-col">
+                <div class="article-num">03</div>
+                <div class="article">
+                    <div class="article-title">
+                        <img src="img/truck.png" alt="">
+                        <p>Fast Support</p>
+                    </div>
+                    <div class="article-text">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</div>
+                    <a href="" class="article-link">Read More &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="services-wrapper">
+        <div class="services clearfix">
+            <p class="services-title">Our Services</p>
+            <a href="#" class="service-figure">
+                <figure>
+                    <p><img src="img/pic1.jpg" alt="Schedule Services"></p>
+                    <figcaption>Schedule Services</figcaption>
+                </figure>
+            </a>
+            <a href="#" class="service-figure service-figure__margin">
+                <figure>
+                    <p><img src="img/pic2.jpg" alt="Preventive Maintence "></p>
+                    <figcaption>Preventive Maintence </figcaption>
+                </figure>
+            </a>
+            <a href="#" class="service-figure service-figure__margin">
+                <figure>
+                    <p><img src="img/pic3.jpg" alt="Tire & Wheel Services "></p>
+                    <figcaption>Tire & Wheel Services </figcaption>
+                </figure>
+            </a>
+            <a href="#" class="service-figure service-figure__margin">
+                <figure>
+                    <p><img src="img/pic4.jpg" alt="Repair Services"></p>
+                    <figcaption>Repair Services</figcaption>
+                </figure>
+            </a>
+        </div>
+    </div>
+    <article class="news-banners">
+        <div class="news-banners-wrapper">
+            <div class="news">
+                <p class="news-top">Latest News</p>
+                <div class="news-item clearfix">
+                    <div class="news-logo">
+                        <img src="img/newsLogo1.jpg" alt="newsLogo1">
+                        <div class="news-month">Jan</div>
+                        <div class="news-day">23</div>
+                    </div>
+                    <div class="news-body">
+                        <div class="news-head">
+                            <p class="news-title">
+                                <a href="#">Advanced Machinery Helps Improve Quality</a>
+                            </p>
+                            <p class="news-details">
+                                <a href="#">
+                                    by <span>cmsmasters</span>
+                                </a>
+                                <a href="#">
+                                    Comments (<span>6</span>)
+                                </a>
+                            </p>
+                        </div>
+                        <div class="news-text">
+                            Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.
+                        </div>
+                    </div>
+                </div>
+                <div class="news-item clearfix">
+                    <div class="news-logo">
+                        <img src="img/newsLogo2.jpg" alt="newsLogo2">
+                        <div class="news-month">Jan</div>
+                        <div class="news-day">21</div>
+                    </div>
+                    <div class="news-body">
+                        <div class="news-head">
+                            <p class="news-title">
+                                <a href="#">Powerful Techniques for Advanced Service</a>
+                            </p>
+                            <p class="news-details">
+                                <a href="#">
+                                    by <span>cmsmasters</span>
+                                </a>
+                                <a href="#">
+                                    Comments (<span>3</span>)
+                                </a>
+                            </p>
+                        </div>
+                        <div class="news-text">
+                            Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banners">
+                <p class="banners-top">Banners Place</p>
+                <button class="banners-accordion active">ACCORDION PANEL 1</button>
+                <div class="banners-panel show">
+                    <p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur  samomo enim ipsam voluptatem.</p>
+                </div>
+                <button class="banners-accordion">ACCORDION PANEL 2</button>
+                <div class="banners-panel">
+                    <p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur  samomo enim ipsam voluptatem.</p>
+                </div>
+                <button class="banners-accordion">ACCORDION PANEL 3</button>
+                <div class="banners-panel">
+                    <p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur  samomo enim ipsam voluptatem.</p>
+                </div>
+                <button class="banners-accordion">ACCORDION PANEL 4</button>
+                <div class="banners-panel">
+                    <p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur  samomo enim ipsam voluptatem.</p>
+                </div>
+            </div>
+        </div>
+    </article>
+    <div class="logos">
+        <img src="img/logos.png" alt="">
+    </div>
+    <div class="footer-wrapper">
+    <footer>
+        <div class="footer">
+        <div class="clearfix">
+        <div class="footer-links footer-links__margin">
+            <p>SOCIALS</p>
+            <ul>
+                <li class="footer-li__border"><a href="#">Facebook</a></li>
+                <li class="footer-li__border"><a href="#">Flickr</a></li>
+                <li class="footer-li__border"><a href="#">Twitter</a></li>
+                <li><a href="#">Vimeo</a></li>
+            </ul>
+        </div>
+        <div class="footer-links footer-links__margin">
+            <p>LINKS</p>
+                <li class="footer-li__border"><a href="#">How to Write a Blog</a></li>
+                <li class="footer-li__border"><a href="#">Create a Blog in 4 Steps</a></li>
+                <li class="footer-li__border"><a href="#">15 Tips to Increas</a></li>
+                <li><a href="#">20 Blog Post Ideas</a></li>
+            <ul>
+            </ul>
+        </div>
+        <div class="footer-links footer-links__margin">
+            <p>BLOGROLL</p>
+            <ul>
+                <li class="footer-li__border"><a href="#">Blogs Blog</a></li>
+                <li class="footer-li__border"><a href="#">Roll Up Roll Up</a></li>
+                <li class="footer-li__border"><a href="#">Blog Free</a></li>
+                <li><a href="#">Wordpress Blog</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <p>ABOUT US</p>
+            <ul>
+                <li class="footer-li__border"><a href="#">Agriculture</a></li>
+                <li class="footer-li__border"><a href="#">Harvest</a></li>
+                <li class="footer-li__border"><a href="#">Company news</a></li>
+                <li><a href="#">Investor relations</a></li>
+            </ul>
+        </div>
+        </div>
+        </div>
+        <div class="footer-bar">
+            <ul class="footer-contacts clearfix">
+                <li><a href="#"><i class="fa fa-map-marker"></i> BuildHomeLtd.  Street Name 123   23 45 Cityname</a></li>
+                <li><a href="#"><i class="fa fa-mobile-phone"></i> +123 900 123 456</a></li>
+                <li><a href="#"><i class="fa fa-envelope-o"></i> info@buildhome.web</a></li>
+                <a href="#" class="copyright"><i class="fa fa-copyright"></i> 2014 Build Home</a>
+            </ul>
+        </div>
+    </footer>
+    </div>
 </body>
+<!--<script type="text/javascript" src="js/scrip"></script>-->
+<script type="text/javascript" src="js/script.main.min.js"></script>
+
 </html>

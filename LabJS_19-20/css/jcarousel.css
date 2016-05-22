@@ -1,0 +1,121 @@
+
+.jcarousel-wrapper {
+    margin: 20px auto;
+    position: relative;
+    width: 1160px;
+    /*height: 400px;*/
+    /*-webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    -webkit-box-shadow: 0 0 2px #999;
+       -moz-box-shadow: 0 0 2px #999;
+            box-shadow: 0 0 2px #999;*/
+}
+
+.jcarousel-wrapper .photo-credits {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    font-size: 13px;
+    color: #fff;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
+    opacity: .66;
+}
+
+.jcarousel-wrapper .photo-credits a {
+    color: #fff;
+}
+
+/** Carousel **/
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    float: left;
+    width: 1160px;
+    /*height: 400px;*/
+}
+
+/** Carousel Controls **/
+
+.jcarousel-control-prev,
+.jcarousel-control-next {
+    position: absolute;
+    top: 200px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #4E443C;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 24px/27px Arial, sans-serif;
+    -webkit-border-radius: 30px;
+       -moz-border-radius: 30px;
+            border-radius: 30px;
+    -webkit-box-shadow: 0 0 2px #999;
+       -moz-box-shadow: 0 0 2px #999;
+            box-shadow: 0 0 2px #999;
+}
+
+.jcarousel-control-prev {
+    right: -50px;
+}
+
+.jcarousel-control-next {
+    left: -50px;
+}
+
+.jcarousel-control-prev:hover span,
+.jcarousel-control-next:hover span {
+    display: block;
+}
+
+.jcarousel li img{
+    /*float: right;*/
+    width: 1160px;
+    /*height: 400px;*/
+}
+
+.jcarousel[dir=rtl] li {
+    float: right;
+}
+
+.jcarousel-pagination {
+    position: relative;
+    bottom: 40px;
+    left: 15px;
+    text-align: center;
+}
+
+.jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 9px;
+    line-height: 9px;
+    min-width: 9px;
+    border: 3px solid #fff;
+    background: #fff;
+    /*padding: 3px;*/
+    text-align: center;
+    margin-right: 15px;
+    opacity: .75;
+}
+
+.jcarousel-pagination a.active {
+    background: #000;
+    /*color: #000;*/
+    opacity: 1;
+    /*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);*/
+}
