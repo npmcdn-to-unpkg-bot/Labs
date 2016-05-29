@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>LabJS 13-14</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/myModal.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/lodash.min.js"></script>
+</head>
+
+<body>
+    <script type="text/template" id="QuestionTemplate">
+        <div>
+            <h1 style="text-align: center;">Тест по программированию</h1>
+            <form>
+                <% for (var i=0; i<list.length; i++)  { %>
+                <div id="question-<%-i%>" class="form-group checkbox col-sm-10 col-sm-offset-1">
+                    <h3><%-list[i].qTitle%></h3>
+                    <% for (var j=0; j<list[i].variants.length; j++)  { %>
+                    <label><input id="variant-<%-i%>-<%-j%>" type="checkbox" class="checkbox_check"><%-list[i].variants[j]%></label>
+                    <br>
+                    <% }; %>
+                </div>
+                <% }; %>
+            </form>
+         
+            <input type="submit" value="Проверить мои результаты" class="btn btn-primary col-sm-4 col-sm-offset-4" style="height: 48px; color: rgb(0, 0, 0); border: 1px solid black; background-color: rgb(208, 225, 241);" id="check">
+        </div>
+        <div class="myModal-overlay" id="myModal">
+            <div class="myModal-dialog">
+                <div class="myModal-content">
+                    <div class="myModal-header">
+                        <button type="button" class="myModal-close" >&times;</button>
+                        <h4 class="modal-title">Результаты</h4>
+                    </div>
+                    <div class="myModal-body">
+                        <p></p>
+                    </div>
+                    <div class="myModal-footer">
+                        <button type="button" class="myBtn-close btn btn-default">Закрыть</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jQuery-MyModal.js"></script>
+<script type="text/javascript" src="js/script.js">
+    </script>
+</body>
+
+</html>

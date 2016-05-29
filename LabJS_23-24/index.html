@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LabJS_23-24</title>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script data-main="js/app" src="js/require.js"></script>
+</head>
+
+<body>
+
+    <script type="text/template" id="tasksTemplate">
+        <% for (var i=0; i < data.length; i++) { %>
+            <div class="tasks-accordion">
+                <span class="tasks-title"><%-data[i].title%></span>
+                <span class="tasks-icons">
+                    <i class="fa fa-pencil tasks-edit tasks-icon"></i> 
+                    <i class="fa fa-trash-o tasks-delete tasks-icon"></i> 
+                </span>
+            </div>
+            <div class="tasks-panel">
+                <p><%-data[i].text%></p>
+            </div>
+        <% } %>
+    </script>
+
+    <script type="text/template" id="tasksWrapper">
+        <div class="container">
+            <div class="row">
+                <div class="panel">
+                    <h2 class="tasks-top">My tasks</h2>
+                    <div class="tasks">
+                    </div>
+                </div>
+                <div class="panel">
+                    <h2 class="tasks-top">Add/Edit task</h2>
+                    <div class="edit">
+                        <input type="text" class="edit-title" placeholder="Type task title here...">
+                        <br>
+                        <textarea class="edit-text" placeholder="Type task details here..."></textarea>
+                        <br>
+                        <button class="edit-save">Save task</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+</body>
+</html>

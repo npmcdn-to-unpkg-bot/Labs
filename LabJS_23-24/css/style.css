@@ -1,0 +1,136 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tasks {
+  float: left;
+  width: 560px;
+  margin-left: 40px;
+}
+
+.tasks-top {
+    text-align: center;
+}
+
+.tasks-accordion {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  padding-left: 50px;
+  line-height: 40px;
+  /*width: 560px;*/
+  height: 40px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  transition: 0.4s;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+}
+
+.tasks-accordion.active, .tasks-accordion:hover {
+  background-color: gold;
+  color: #fff;
+}
+
+.tasks-accordion:before {
+  content: '\02795';
+  font-size: 13px;
+  float: left;
+  margin-left: -40px;
+  padding-right: 8px;
+  border-right: 2px #e8e8e8 solid;
+}
+
+.tasks-accordion.active:before {
+  content: "\2796";
+}
+
+.tasks-panel {
+  display: none;
+  max-height: 0;
+  /*overflow: hidden;*/
+  transition: max-height 0.4s ease-in-out;
+  /*opacity: 0;*/
+}
+
+.tasks-panel p {
+    margin: 10px;
+    font-size: 13   px;
+    color: #8a8a8a;
+    line-height: 1.5em;
+  }
+
+.tasks-panel.show {
+    /*opacity: 1;*/
+    display: block;
+    transition: max-height 0.4s ease-in-out;
+    max-height: 500px;  
+}
+
+.tasks-icons {
+    float: right;
+    margin-right: 10px;
+}
+
+.tasks-icon {
+    margin-right: 10px;
+}
+
+.edit {
+    width: 80%;
+    margin: auto;
+}
+
+.edit-title {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px #e8e8e8 solid;
+    padding: 0 10px;
+    color: #8a8a8a;
+    line-height: 30px;
+}
+
+.edit-text {
+    margin: 10px 0;
+    width: 100%;
+    height: 200px;
+    resize: none;
+    border-radius: 5px;
+    border: 1px #e8e8e8 solid;
+    padding: 10px;
+    color: #8a8a8a;
+}
+
+.edit-save {
+    border: 1px #e8e8e8 solid;
+    background-color: white;
+    border-radius: 5px;
+    color: #8a8a8a;
+    line-height: 25px;
+}
+
+.edit-save:hover {
+    background-color: lightblue;
+    color: white;
+}
+
+.row {
+    margin: 0 -15px;
+}
+
+.panel {
+    width: 50%;
+    float: left;
+    position: relative;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}

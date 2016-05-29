@@ -1,0 +1,118 @@
+(function ($) {
+    var model = new Model([{ title: 'First task', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, molestiae, assumenda? Laudantium voluptatum natus non necessitatibus. Ut ipsa sapiente eaque libero excepturi odit repudiandae. Quas amet ipsam veniam quae tenetur!'},
+        { title: 'Second task', text: 'Sapiente, molestiae, assumenda? Laudantium voluptatum natus non necessitatibus. Ut ipsa sapiente eaque libero excepturi odit repudiandae. Quas amet ipsam veniam quae tenetur!' },
+        { title: 'Third task', text: 'Ut ipsa sapiente eaque libero excepturi odit repudiandae. Quas amet ipsam veniam quae tenetur!' },
+        { title: 'Fourth task', text: 'Quas amet ipsam veniam quae tenetur!' },
+                ]);
+    var view = new View(model);
+    var controller = new Controller(model, view);
+
+} (jQuery));
+
+function Model(tasks) {
+    var self = this;
+    self.data = tasks;
+    var oldTitle;
+
+    self.addItem = function (task) {
+        if (task.title.length === 0) {
+            return;
+        }
+
+        self.data.push(task);
+        // console.log(self.data);
+        return self.data;
+    };
+
+    self.removeTask = function (task) {
+        var index = _.findIndex(self.data, function (o) { return o.title == task; });
+        // console.log(index);
+        if (index === -1) {
+            // console.log('task for deleting not found');
+            return;
+        }
+        self.data.splice(index, 1);
+        return self.data;
+    };
+
+    self.editTask = function (title, text) {
+        var index = _.findIndex(self.data, function (o) { return o.title == self.oldTitle; });
+        self.data[index].title = title;
+        self.data[index].text = text;
+        self.oldTitle = null;
+        return self.data;
+    };
+
+}
+
+function View(model) {
+    var self = this;
+
+    self.renderTasks = function (model) {
+        var tmpl = _.template($('#tasksTemplate').html());
+        var result = tmpl(model);
+        self.elements.tasks.html('');
+        self.elements.tasks.append(result);
+        $('.tasks-accordion').on('click', function () {
+            $('.tasks-panel').removeClass('show');
+            $('.tasks-accordion').removeClass('active');
+            self.elements.title.val('');
+            self.elements.text.val('');
+            model.oldTitle = null;
+            $(this).addClass('active');
+            $(this).next('.tasks-panel').addClass('show');
+        });
+    };
+
+
+    function init() {
+        var tmpl = _.template($('#tasksWrapper').html());
+        var result = tmpl();
+        $('body').append(result);
+        self.elements = {
+            title: $('.edit-title'),
+            text: $('.edit-text'),
+            saveBtn: $('.edit-save'),
+            tasks: $('.tasks')
+        };
+        self.renderTasks(model);
+    }
+    init();
+}
+
+function Controller(model, view) {
+    view.elements.saveBtn.on('click', addTask);
+    view.elements.tasks.on('click', '.tasks-delete', deleteTask);
+    view.elements.tasks.on('click', '.tasks-edit', editTask);
+
+    function addTask() {
+        var newTask = { title: view.elements.title.val(), text: view.elements.text.val() };
+        if (model.oldTitle) {
+            model.editTask(newTask.title, newTask.text);
+            view.renderTasks(model);
+            view.elements.title.val('');
+            view.elements.text.val('');
+            return;
+        }
+        // model.removeTask(newTask.title);
+        model.addItem(newTask);
+        view.elements.title.val('');
+        view.elements.text.val('');
+
+        view.renderTasks(model);
+    }
+
+    function deleteTask() {
+        var item = $(this).parent().prev().text();
+        model.removeTask(item);
+        view.renderTasks(model);
+    }
+
+    function editTask() {
+        var itemTitile = $(this).parent().prev().text();
+        var itemText = $(this).closest('.tasks-accordion').next().children().text();
+        model.oldTitle = itemTitile;
+        view.elements.title.val(itemTitile);
+        view.elements.text.val(itemText);
+    }
+}

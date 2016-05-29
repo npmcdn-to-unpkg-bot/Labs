@@ -1,0 +1,20 @@
+{
+  "name": "LabJS_21-22",
+  "description": "LabJS_21-22",
+  "version": "1.0.0",
+  "author": "DEN",
+  "repository": "",
+  "license": "ISC",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "main": "script.js",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.9.0",
+    "grunt": "^1.0.1",
+    "grunt-babel": "^6.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "load-grunt-tasks": "^3.5.0"
+  }
+}
