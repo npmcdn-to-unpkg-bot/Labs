@@ -1,0 +1,505 @@
+$small: 320px;
+$medium: 768px;
+$large: 1440px;
+$color-red: #ff4e50;
+$color-gray: #333333;
+$font-bold: "Montserrat Bold",Arial,sans-serif;
+$font-regular: "Montserrat Regular",Arial,sans-serif;
+$font-light: "Roboto Light",sans-serif;
+
+.clearfix:after{
+  content: "";
+  clear: both;
+  display: block;
+}
+
+@mixin respond-to($media) {
+  @if $media == mobile {
+    @media (min-width: $small) and (max-width: $medium) { @content; }
+  }
+  @else if $media == tablet {
+    @media only screen and (min-width: $medium) and (max-width: $large) { @content; }
+  }
+  @else if $media == desktop {
+    @media only screen and (min-width: $large) { @content; }
+  }
+}
+
+.header {
+    position: relative;
+    height: 700px;
+    color: white;
+     @include respond-to(mobile) {
+            height: 540px;
+        }
+
+    &-img {
+        background-image: url('../img/Head.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &-content {
+        position: absolute; 
+        top: 213px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        
+        text-align: center;
+        @include respond-to(desktop) {
+            width: 500px;
+        }
+        @include respond-to(tablet) {
+            width: 500px;
+        }
+        @include respond-to(mobile) {
+            width: 280px;
+            top: 221px;
+        }
+    }
+
+    &-title {
+        text-transform: uppercase;
+        font-family: $font-bold;
+        font-weight: bold;
+        @include respond-to(desktop) {
+            font-size: 52px;
+            line-height: 63px;
+            margin: 0 0 23px 0;
+        }
+        @include respond-to(tablet) {
+            font-size: 52px;
+            margin: 0 0 23px 0;
+        }
+        @include respond-to(mobile) {
+            font-size: 30px;
+            margin: 0 0 7px 0;
+        }
+    }
+
+    &-subtitle {
+        font-family: $font-light;
+        font-weight: 300;
+        @include respond-to(desktop) {
+            // letter-spacing: -0.25px;
+            font-size: 23px;
+            margin: 0 0 0 0;
+        }
+        @include respond-to(tablet) {
+            letter-spacing: -0.25px;
+            font-size: 24px;
+            margin: 0 0 0 0;
+        }
+        @include respond-to(mobile) {
+            font-size: 18px;
+            margin: auto;
+            width: 230px;
+            text-align: center;
+            line-height: 22px;
+        }
+    }
+
+    &-button {
+        font-size: 14px;
+        display: inline-block;
+        color: white;
+        background-color: $color-red;
+        border: none;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 40px;
+        font-family: $font-bold;
+        font-weight: bold;
+        transition: all 0.5s ease;
+        @include respond-to(desktop) {
+            margin-top: 37px;
+            width: 225px;
+        }
+        @include respond-to(tablet) {
+            margin-top: 32px;
+            width: 225px;
+        }
+        @include respond-to(mobile) {
+            margin-top: 16px;
+            width: 280px;
+        }
+    }
+
+    &-button:hover {
+         background-color: white;
+         color: $color-red;
+         cursor: pointer;
+     }
+
+    &-top_title {
+        font-size: 20px;
+        font-family: $font-bold;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        @include respond-to(desktop) {
+            float: left;
+            margin: 45px 0 0 17.3%;
+        }
+        @include respond-to(tablet) {
+            float: left;            
+            margin: 46px 0 0 6.3%;
+        }
+        @include respond-to(mobile) {
+            text-align: center;
+            margin-top: 115px;
+            // float: left;
+        }
+    }
+
+    &-buttons {
+        
+        @include respond-to(desktop) {
+            margin: 18px 17.3% 0 0; 
+            float: right;
+            // margin: 45px 0 0 17%;
+        }
+        @include respond-to(tablet) {
+            margin: 18px 6.6% 0 0; 
+            float: right;            
+            // margin: 45px 0 0 6.5%;
+        }
+        @include respond-to(mobile) {
+            text-align: center;
+            // float: left;
+            // display: none;
+        }
+    }
+
+    &-top_button {
+        padding: 0 17px;//0 27px 0 6px
+        background: none;
+        border: none;
+        font-size: 14px;
+        font-family: $font-bold;
+        font-weight: bold;
+        color: white;
+        height: 36px;
+        margin-top: 20px; 
+        @include respond-to(mobile) {
+             margin: 20px 11px 0 -11px;
+        }
+    }
+
+    &-top_button:hover {
+        border: 2px white solid;
+        padding: 0 15px;
+        border-radius: 39px;
+        cursor: pointer;
+    }
+}
+
+.mainPart {
+    &-how_works {
+        position: relative;
+        @include respond-to(desktop) {
+        	margin-top: 94px;
+        }
+        @include respond-to(tablet) {
+            margin-top: 94px;
+        }
+        @include respond-to(mobile) {
+            margin-top: 34px;
+        }
+        &__title {
+            font-size: 22px;
+            font-family: $font-bold;
+            font-weight: bold;
+            text-align: center;
+            color: $color-gray;
+            
+            @include respond-to(desktop) {
+                margin-bottom: 34px;
+            }
+            @include respond-to(tablet) {
+                margin-bottom: 34px;
+            }
+            @include respond-to(mobile) {
+                margin: 34px 0 14px 0;
+            }
+        }
+    &-step {
+        position: absolute;
+        z-index: 3;
+        bottom: 16px;
+        left: 20px;
+       
+        @include respond-to(desktop) {
+        	width: 260px;
+        }
+        @include respond-to(tablet) {
+             width: 201px;
+        }
+        @include respond-to(mobile) {
+             width: 260px;
+        }
+        // padding: 20px;
+        &__button {
+            height: 20px;
+            width: 70px;
+            display: block;
+            background-color: $color-red;
+            border-radius: 20px;
+            color: white;
+            font-size: 10px;
+            font-family: $font-regular;
+            text-transform: uppercase;
+            line-height: 20px;
+            text-align: center;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+
+        &__title {
+            display: block;
+            font-family: $font-bold;
+            font-weight: bold;
+            color: white;
+            font-size: 24px;
+            
+            @include respond-to(desktop) {
+                margin-bottom: 7px;
+            }
+            @include respond-to(tablet) {
+                margin-bottom: 4px;
+            }
+            @include respond-to(mobile) {
+                margin-bottom: 4px;
+            }
+        }
+
+        &__text {
+            font-family: $font-light;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 14px;
+            color: #cccccc;
+        }
+    }
+    }
+
+    @include respond-to(desktop) {
+        width: 940px; 
+        margin: auto;
+    }
+    @include respond-to(tablet) {
+        width: 748px; 
+        margin: auto;
+    }
+    @include respond-to(mobile) {
+        width: 300px; 
+        margin: auto;
+    }
+
+
+    &-partners {
+        &__title {
+            font-size: 22px;
+            font-family: $font-bold;
+            font-weight: bold;
+            text-align: center;
+            color: $color-gray;
+
+            @include respond-to(desktop) {
+                margin-top: 94px;
+                margin-bottom: 34px;
+            }
+            @include respond-to(tablet) {
+                margin-top: 96px;
+                margin-bottom: 10px;
+            }
+            @include respond-to(mobile) {
+                margin: 34px 0 14px 0;
+            }
+        }
+        
+        &__wrapper {
+            position: relative;
+            margin: auto;
+            // width: 68.5%;
+            @include respond-to(desktop) {
+                // width: 68.5%;
+            }
+            @include respond-to(tablet) {
+                width: 68.5%;
+            }
+            @include respond-to(mobile) {
+                width: 86%;
+            }
+        }
+
+        &__partner {
+            
+            text-align: center;
+            float: left;
+            // margin: 0px 10px 56px 10px;
+            @include respond-to(desktop) {
+                margin: 0;
+                width: 220px;
+                &:nth-child(n+2) {
+                    margin-left: 20px;
+                }
+            }
+            @include respond-to(tablet) {
+                width: 236px;
+                margin: 21px 10px 35px 10px;
+            }
+            @include respond-to(mobile) {
+                width: 236px;
+                margin: 0px 10px 25px 10px;
+            }
+        }
+        &__photo {
+            border-radius: 50%;
+            height: 120px;
+            width: 120px;
+        }
+
+        &__name {
+            display: block;
+            font-style: $font-bold;
+            font-weight: bold;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 17px;
+        }
+
+        &__about {
+            display: block;
+            font-style: $font-light;
+            font-weight: 300;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 14px;
+            line-height: 17px;
+        }
+
+        &__group {
+            position: relative;
+        }
+
+        &__sprite1, &__sprite2, &__sprite3, &__sprite4 {
+            display: block;
+            position: absolute;
+            right: 53px;
+            bottom: 0;
+            border-radius: 50%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+            border: 4px white solid;
+            height: 40px;
+            width: 40px;
+            @include respond-to(desktop) {
+                right: 44px;
+            }
+        }
+
+        &__sprite1 {
+            background-color: $color-red;
+            background-image: url('../img/tv.png');
+        }
+        &__sprite2 {
+            background-color: #1cd7ad;
+            background-image: url('../img/cup.png');
+        }
+
+        &__sprite3 {
+            background-color: #ffa507;
+            background-image: url('../img/bottle.png');
+        }
+
+        &__sprite4 {
+            background-color: #4e73db;
+            background-image: url('../img/plane.png');
+        }
+
+        &__button {
+            margin: auto;
+            color: $color-red;
+            display: block;
+            border: 2px $color-red solid;
+            border-radius: 40px;
+            font-style: $font-bold;
+            font-weight: bold;
+            font-size: 14px;
+            text-align: center;
+            letter-spacing: 0.45px;
+            
+        
+            background-color: transparent;
+            transition: all 0.5s ease;
+
+            @include respond-to(desktop) {
+                margin-top: 38px;
+                width: 192px;
+                line-height: 34px;
+            }
+            @include respond-to(tablet) {
+                width: 192px;
+                line-height: 34px;
+            }
+            @include respond-to(mobile) {
+                width: 94%;
+                margin-top: 2px;
+                line-height: 35px;
+                letter-spacing: 0.45px;
+            }
+        }
+
+        &__button:hover {
+            background-color: $color-red;
+            color: white;
+            cursor: pointer;
+        }
+    }
+    &-picures {
+        &__title {
+            @include respond-to(desktop) {
+                margin: 96px 0 35px 0;
+                text-align: center;
+                font-family: $font-bold;
+                font-weight: bold;
+                font-size: 22px;
+                color:$color-gray;
+
+            }
+            @include respond-to(tablet) {
+                // width: 236px;
+            }
+            @include respond-to(mobile) {
+                // width: 300px;
+            }
+        }
+
+    }
+}
+ 
+.grid-img {
+    border-radius: 4px;
+    @include respond-to(desktop) {
+        min-width: 300px;
+        max-width: 620px;
+        height: 312px;
+    }
+    @include respond-to(tablet) {
+        width: 236px;
+    }
+    @include respond-to(mobile) {
+        width: 300px;
+    }
+}
+
+
+.grid-item {
+    margin-bottom: 20px;
+}
+
+.masonry-wrapper  {
+
+}

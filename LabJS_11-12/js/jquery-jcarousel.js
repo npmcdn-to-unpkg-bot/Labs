@@ -27,7 +27,7 @@
             float: "left"
             
         });
-        $('.jcarousel__img').css({width: settings.width, height: settings.height});
+        $('.jcarousel__img').css({width: settings.width});//, height: settings.height
         $('.jcarousel').css({
             position: 'relative',
             width: settings.width,

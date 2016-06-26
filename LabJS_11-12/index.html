@@ -19,7 +19,7 @@
         <a href="#" class="jcarousel-next jcarousel-control" data-jcarouselcontrol="true">&rsaquo;</a>
             <ul class="jcarousel-list">
                 <% for (var i=1; i<=count; i++) { %>
-                <li class="jcarousel__item"><img class="jcarousel__img" src="img/<%=i%>.jpg" alt=""></li>
+                <li class="jcarousel__item"><img class="jcarousel__img" src="<%=img[i].webformatURL%>" alt=""></li>
                 <% } %>                 
             </ul>
         </div>

@@ -1,0 +1,81 @@
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+  margin: auto; }
+  .jcarousel__img {
+    border-radius: 5px; }
+    @media only screen and (min-width: 1440px) {
+      .jcarousel__img {
+        width: 300px;
+        height: 400px; } }
+    @media only screen and (min-width: 768px) and (max-width: 1440px) {
+      .jcarousel__img {
+        width: 236px;
+        height: 400px; } }
+    @media (min-width: 320px) and (max-width: 768px) {
+      .jcarousel__img {
+        width: 300px;
+        height: 240px; } }
+  .jcarousel__item {
+    display: block;
+    float: left; }
+  .jcarousel-list {
+    list-style: none;
+    position: absolute;
+    left: 0;
+    transition: left 0.5s ease-out 0.2s;
+    margin: 0;
+    padding: 0; }
+  .jcarousel-control {
+    text-decoration: none;
+    position: absolute;
+    font-size: 90px;
+    font-family: "sans-serif";
+    transform: translateY(-66%);
+    color: white;
+    text-shadow: 3px;
+    z-index: 1; }
+    @media (min-width: 320px) and (max-width: 768px) {
+      .jcarousel-control {
+        top: 50%; } }
+  @media only screen and (min-width: 1440px) {
+    .jcarousel-next {
+      top: 193px;
+      right: 20px; } }
+  @media only screen and (min-width: 768px) and (max-width: 1440px) {
+    .jcarousel-next {
+      top: 81px;
+      right: 21px; } }
+  @media (min-width: 320px) and (max-width: 768px) {
+    .jcarousel-next {
+      right: 0px;
+      opacity: 0; } }
+  @media only screen and (min-width: 1440px) {
+    .jcarousel-prev {
+      top: 193px;
+      left: 20px; } }
+  @media only screen and (min-width: 768px) and (max-width: 1440px) {
+    .jcarousel-prev {
+      top: 81px;
+      left: 21px; } }
+  @media (min-width: 320px) and (max-width: 768px) {
+    .jcarousel-prev {
+      left: 0;
+      opacity: 0; } }
+  .jcarousel-wrapper__float {
+    position: relative; }
+    @media only screen and (min-width: 1440px) {
+      .jcarousel-wrapper__float {
+        float: left; } }
+    @media only screen and (min-width: 768px) and (max-width: 1440px) {
+      .jcarousel-wrapper__float {
+        float: left; } }
+  @media only screen and (min-width: 1440px) {
+    .jcarousel-wrapper2 {
+      margin: 0 20px; } }
+  @media only screen and (min-width: 768px) and (max-width: 1440px) {
+    .jcarousel-wrapper2 {
+      margin: 0 20px; } }
+  @media (min-width: 320px) and (max-width: 768px) {
+    .jcarousel-wrapper2 {
+      margin: 10px 0px; } }

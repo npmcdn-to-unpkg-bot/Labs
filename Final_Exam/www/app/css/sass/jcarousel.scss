@@ -1,0 +1,167 @@
+$small: 320px;
+$medium: 768px;
+$large: 1440px;
+@mixin respond-to($media) {
+  @if $media == mobile {
+    @media (min-width: $small) and (max-width: $medium) { @content; }
+  }
+  @else if $media == tablet {
+    @media only screen and (min-width: $medium) and (max-width: $large) { @content; }
+  }
+  @else if $media == desktop {
+    @media only screen and (min-width: $large) { @content; }
+  }
+}
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+
+    &__img {
+        border-radius: 5px;
+        @include respond-to(desktop) {
+            width: 300px;
+            height: 400px;
+        }
+        @include respond-to(tablet) {
+            width: 236px;
+            height: 400px;
+        }
+        @include respond-to(mobile) {
+            width: 300px;
+            height: 240px;
+        }
+        
+    }
+
+    &__item {
+        display: block;
+        float: left;
+    }
+
+    &-list {
+        list-style: none;
+        position: absolute;
+        left: 0;
+        transition: left 0.5s ease-out 0.2s;
+        margin: 0;
+        padding: 0;
+    }
+
+    &-control {
+        text-decoration: none;
+        position: absolute;
+        font-size: 90px;
+        font-family: "sans-serif";
+        
+        transform: translateY(-66%);
+        color: white;
+        text-shadow: 3px;
+        z-index: 1;
+        @include respond-to(desktop) {
+            // opacity: 0;
+        }
+        @include respond-to(tablet) {
+            // top: 82px;
+            // left: 16px;
+            // width: 41px;
+            // height: 58px;
+        }
+        @include respond-to(mobile) {
+            top: 50%;
+            // width: 41px;
+            // height: 58px;
+            // opacity: 0;
+        }
+}
+
+    &-next {
+        // right: 16px;
+        img {
+                @include respond-to(desktop) {
+                    // opacity: 0;
+                }
+                @include respond-to(tablet) {
+                    // right: 16px;
+                    // width: 41px;
+                    // height: 58px;
+                }
+                @include respond-to(mobile) {
+                    // opacity: 0;
+                }
+        }
+        @include respond-to(desktop) {
+            top: 193px;
+            right: 20px;
+        }
+        @include respond-to(tablet) {
+            top: 81px;
+            right: 21px;
+            // width: 41px;
+            // height: 58px;
+        }
+        @include respond-to(mobile) {
+            right: 0px;
+            opacity: 0;
+        }
+    }
+
+    &-prev {
+       // left: 16px;
+        img {
+                @include respond-to(desktop) {
+                    // opacity: 0;
+                }
+                @include respond-to(tablet) {
+                    // right: 16px;
+                    // width: 41px;
+                    // height: 58px;
+                }
+                @include respond-to(mobile) {
+                    // opacity: 0;
+                }
+        }
+        @include respond-to(desktop) {
+            top: 193px;
+            left: 20px;
+        }
+        @include respond-to(tablet) {
+            top: 81px;
+            left: 21px;
+            // width: 41px;
+            // height: 58px;
+        }
+        @include respond-to(mobile) {
+            // top: 50%;
+            left: 0;
+            opacity: 0;
+        }
+    }
+
+    &-wrapper__float {
+        position: relative;
+        @include respond-to(desktop) {
+            float: left;
+        }
+        @include respond-to(tablet) {
+            float: left;
+        }
+        @include respond-to(mobile) {
+
+        }
+    }
+
+    &-wrapper2 {
+        @include respond-to(desktop) {
+            margin: 0 20px;
+        }
+        @include respond-to(tablet) {
+            margin: 0 20px;
+        }
+        @include respond-to(mobile) {
+            margin: 10px 0px;
+        }
+    }
+
+}
