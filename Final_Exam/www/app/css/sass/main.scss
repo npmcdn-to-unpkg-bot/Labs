@@ -266,10 +266,10 @@ $font-light: "Roboto Light",sans-serif;
                 margin-bottom: 7px;
             }
             @include respond-to(tablet) {
-                margin-bottom: 4px;
+                margin-bottom: 7px;
             }
             @include respond-to(mobile) {
-                margin-bottom: 4px;
+                margin-bottom: 7px;
             }
         }
 
@@ -314,7 +314,7 @@ $font-light: "Roboto Light",sans-serif;
                 margin-bottom: 10px;
             }
             @include respond-to(mobile) {
-                margin: 34px 0 14px 0;
+                margin: 34px 7px 14px 0;
             }
         }
         
@@ -351,7 +351,7 @@ $font-light: "Roboto Light",sans-serif;
             }
             @include respond-to(mobile) {
                 width: 236px;
-                margin: 0px 10px 25px 10px;
+                margin: 0px 10px 23px 10px;
             }
         }
         &__photo {
@@ -362,20 +362,24 @@ $font-light: "Roboto Light",sans-serif;
 
         &__name {
             display: block;
-            font-style: $font-bold;
+            font-family: $font-bold;
             font-weight: bold;
             text-align: center;
             font-size: 14px;
-            margin-top: 17px;
+            margin-top: 13px;
+            @include respond-to(desktop) {
+                margin-top: 15px;
+            }
         }
 
         &__about {
             display: block;
-            font-style: $font-light;
+            font-family: $font-light;
             font-weight: 300;
             text-align: center;
             font-size: 14px;
-            margin-top: 14px;
+            width: 220px;
+            margin: 14px auto 0 auto;
             line-height: 17px;
         }
 
@@ -425,7 +429,7 @@ $font-light: "Roboto Light",sans-serif;
             display: block;
             border: 2px $color-red solid;
             border-radius: 40px;
-            font-style: $font-bold;
+            font-family: $font-bold;
             font-weight: bold;
             font-size: 14px;
             text-align: center;
@@ -470,10 +474,20 @@ $font-light: "Roboto Light",sans-serif;
 
             }
             @include respond-to(tablet) {
-                // width: 236px;
+                margin: 96px 0 33px 0;
+                text-align: center;
+                font-family: $font-bold;
+                font-weight: bold;
+                font-size: 22px;
+                color:$color-gray;
             }
             @include respond-to(mobile) {
-                // width: 300px;
+                margin: 33px 0 12px 0;
+                text-align: center;
+                font-family: $font-bold;
+                font-weight: bold;
+                font-size: 22px;
+                color:$color-gray;
             }
         }
 
@@ -483,9 +497,9 @@ $font-light: "Roboto Light",sans-serif;
 .grid-img {
     border-radius: 4px;
     @include respond-to(desktop) {
-        min-width: 300px;
-        max-width: 620px;
-        height: 312px;
+        width: 300px;
+        // max-width: 620px;
+        // height: 312px;
     }
     @include respond-to(tablet) {
         width: 236px;
@@ -501,5 +515,35 @@ $font-light: "Roboto Light",sans-serif;
 }
 
 .masonry-wrapper  {
+    background-color: lightgreen;
+}
 
+.footer {
+    &-wrapper {
+        border-top: $color-red 4px solid;
+        @include respond-to(desktop) {
+            height: 193px;
+        }
+        @include respond-to(tablet) {
+            height: 197px;
+        }
+        @include respond-to(mobile) {
+            height: 190px;
+        }
+    }
+
+    &-main {
+        @include respond-to(desktop) {
+        width: 940px; 
+        margin: auto;
+        }
+        @include respond-to(tablet) {
+            width: 748px; 
+            margin: auto;
+        }
+        @include respond-to(mobile) {
+            width: 300px; 
+            margin: auto;
+        }
+    }
 }

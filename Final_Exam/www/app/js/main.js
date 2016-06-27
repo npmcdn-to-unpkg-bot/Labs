@@ -83,17 +83,17 @@ $(document).ready(function() {
 
         var $grid = $('.grid').isotope({
             itemSelector: '.grid-item',
-            layoutMode: 'fitRows',
-            // masonry: {
-            //     columnWidth: '.grid-img',
-            //     gutter: 20
-            // }
+            layoutMode: 'masonry',
+            masonry: {
+                columnWidth: '.grid-img',
+                gutter: 20
+            }
             // masonryHorizontal: {
             //     rowHeight: 312
             // }
-            fitRows: {
-                gutter: 20
-            }
+            // fitRows: {
+            //     gutter: 20
+            // }
         });
         // console.log('$grid', $grid);
         // layout Isotope after each image loads
